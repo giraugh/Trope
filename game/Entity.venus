@@ -1,0 +1,86 @@
+local v = require('lib.vectorial')
+local animation = require('game.Animation')
+
+return fn(x, y, LevelLoader, animations, size, offset) {
+  local e = {}
+  e.pos = v.Vector2D(x, y)
+  e.vel = v.Vector2D(0, 0)
+  e.damp = v.Vector2D(.88, 1)
+  e.size = size
+  e.offset = offset or {x = 0, y = 0}
+  e.anim = animations.default
+  e.animations = {}
+  e.flipped = false
+  e.chunk = LevelLoader
+
+  for i, anim in pairs(animations) {
+    if i != 'default' {
+      e.animations[i] = animation(anim, anim.delay)
+    }
+  }
+
+  fn e:empty(x, y, fun) {
+    return self.chunk:empty(x, y, self.size.w, self.size.h, fun)
+  }
+
+  fn e:update(dt) {
+
+    ##Apply damping
+    self.vel = self.vel * self.damp
+
+    ##Calculate Horizontal and Vertical Update
+    local upd = self.vel * v.Vector2D(dt, dt)
+    local hupd = upd:getX()
+    local vupd = upd:getY()
+
+    ##Horizontal collision
+    if self:empty(self.pos:getX() + hupd, self.pos:getY()) {
+      self.pos:setX(self.pos:getX() + hupd)
+    } else {
+      while self:empty(self.pos:getX() + sign(hupd), self.pos:getY()) {
+        self.pos:setX(self.pos:getX() + sign(hupd))
+      }
+      self.vel:setX(0)
+    }
+
+    ##Vertical collision
+    if self:empty(self.pos:getX(), self.pos:getY() + vupd) {
+      self.pos:setY(self.pos:getY() + vupd)
+    } else {
+      while self:empty(self.pos:getX(), self.pos:getY() + sign(vupd)) {
+        self.pos:setY(self.pos:getY() + sign(vupd))
+      }
+      self.vel:setY(0)
+    }
+
+    ##Animation update
+    self.animations[self.anim]:update(dt)
+  }
+
+  fn e:setAnim(anim) {
+    if self.anim != anim {
+      self:currentAnim().currentFrame = 1
+      self:currentAnim().timer = 0
+    }
+    self.anim = anim
+  }
+
+  fn e:currentAnim() {
+    return self.animations[self.anim]
+  }
+
+  fn e:draw() {
+    local x = self.pos:getX() + self.offset.x
+    local y = self.pos:getY() + self.offset.y
+    if self.flipped {
+      x += self:currentAnim():get():getWidth()
+    }
+    self:currentAnim():draw(x, y, 0, self.flipped and -1 or 1, 1)
+  }
+
+  fn e:addForce(x, y) {
+    self.vel += v.Vector2D(x, y)
+  }
+
+  return e
+}

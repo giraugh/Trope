@@ -1,0 +1,54 @@
+tileSize: 32
+gridScaleUp: 2
+imageSize: 16
+levelWidth: 20
+levelHeight: 20
+autos:
+  dirt:
+    thumb: "ground/dirt/grndts_11.png"
+    none:
+      all: ["ground/dirt/grndts_11.png", 3]
+      r: ["ground/dirt/grndts_02.png", 2]
+      l: ["ground/dirt/grndts_06.png", 2]
+      t: ["ground/dirt/grndts_11.png", 2]
+      b: ["ground/dirt/grndts_04.png", 2]
+      tr: ["ground/dirt/grndts_01.png", 3]
+      tl: ["ground/dirt/grndts_00.png", 3]
+      bl: ["ground/dirt/grndts_05.png", 3]
+      br: ["ground/dirt/grndts_03.png", 3]
+    "dirt|grass":
+      all: ["ground/grndts_all.png", 3]
+      tre: ["ground/dirt/grndts_09.png", 1]
+      tle: ["ground/dirt/grndts_10.png", 1]
+      bre: ["ground/dirt/grndts_07.png", 1]
+      ble: ["ground/dirt/grndts_08.png", 1]
+    "ground/dirt/grndts_11.png?grass":
+      r: ["ground/dgblend/grndts_24.png", 4]
+      l: ["ground/dgblend/grndts_25.png", 4]
+    "ground/dirt/grndts_06.png?grass":
+      t: ["ground/dgblend/grndts_31.png", 4]
+      b: ["ground/dgblend/grndts_30.png", 4]
+    "ground/dirt/grndts_02.png?grass":
+      t: ["ground/dgblend/grndts_26.png", 4]
+      b: ["ground/dgblend/grndts_27.png", 4]
+    "ground/dirt/grndts_04.png?grass":
+      l: ["ground/dgblend/grndts_29.png", 4]
+      r: ["ground/dgblend/grndts_28.png", 4]
+  grass:
+    thumb: "ground/grass/grndts_12.png"
+    none:
+      all: ["ground/grass/grndts_12.png", 3]
+      r: ["ground/grass/grndts_14.png", 2]
+      l: ["ground/grass/grndts_18.png", 2]
+      t: ["ground/grass/grndts_12.png", 2]
+      b: ["ground/grass/grndts_16.png", 2]
+      tr: ["ground/grass/grndts_13.png", 3]
+      tl: ["ground/grass/grndts_23.png", 3]
+      bl: ["ground/grass/grndts_17.png", 3]
+      br: ["ground/grass/grndts_15.png", 3]
+    "dirt|grass":
+      all: ["ground/grndts_all.png", 3]
+      tre: ["ground/grass/grndts_21.png", 1]
+      tle: ["ground/grass/grndts_22.png", 1]
+      bre: ["ground/grass/grndts_19.png", 1]
+      ble: ["ground/grass/grndts_20.png", 1]

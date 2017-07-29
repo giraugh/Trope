@@ -1,0 +1,89 @@
+local levelLoader = require('game.LevelLoader')
+local chunkNames = require('data.chunks')
+
+return fn() {
+  local chunks = {}
+
+  fn chunks:init() {
+    self.chunks = {}
+    self:new()
+    self:new()
+    self:new()
+  }
+
+  fn chunks:getCurrent() {
+    return self.chunks[2]
+  }
+
+  fn chunks:new(i) {
+    local chunk = levelLoader()
+    i = i or #self.chunks+1
+
+    chunk:load(self:rnd())
+    chunk:loadImages('rece/')
+    chunk:setTileSize(16)
+    chunk:setSolidLayers({'Main'})
+    chunk.inArrow  = chunk:remove('tiles/back-arrow.png')[1]
+    chunk.outArrow = chunk:remove('tiles/next-arrow.png')[1]
+    chunk.width    = (chunk.outArrow.x - chunk.inArrow.x)
+    chunk.height   = (chunk.outArrow.y - chunk.inArrow.y)
+    chunk.xOffset  = 0
+    chunk.yOffset  = 0
+    if #self.chunks > 0 {
+      local previous = self.chunks[#self.chunks]
+      chunk.xOffset = previous.xOffset + previous.width
+      chunk.yOffset = previous.yOffset + previous.height
+      if i == 1 {
+        previous = self.chunks[1]
+        chunk.xOffset = previous.xOffset - chunk.width
+        chunk.yOffset = previous.yOffset - chunk.height
+      }
+      foreach layer in chunk.loaded.layers {
+        foreach entity in layer {
+          ###
+
+
+          BIG NOTE HERE I MADE A MISTAKE
+          INSTANCES MOVE DIFFERENT
+
+
+          ###
+          entity.x += chunk.xOffset
+          entity.y += chunk.yOffset
+        }
+      }
+    }
+
+    table.insert(self.chunks, i, chunk)
+  }
+
+  fn chunks:draw() {
+    foreach chunk in self.chunks {
+      chunk:draw()
+    }
+  }
+
+  fn chunks:update() {
+    local pChunk = Player.chunk
+    if Player.pos:getX() > (pChunk.xOffset + pChunk.width) * pChunk.tileSize {
+      table.remove(self.chunks, 1)
+      self:new()
+      print(#self.chunks)
+      Player.chunk = self:getCurrent()
+      Player.pos:setY(Player.pos:getY() - 1)
+    }
+    if Player.pos:getX() < pChunk.xOffset * pChunk.tileSize {
+      table.remove(self.chunks, #self.chunks)
+      self:new(1)
+      print(#self.chunks)
+      Player.chunk = self:getCurrent()
+      Player.pos:setY(Player.pos:getY() - 1)
+    }
+  }
+
+  fn chunks:rnd() {
+    return chunkNames[love.math.random(1, #chunkNames)]
+  }
+
+  return chunks
+}

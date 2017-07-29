@@ -1,0 +1,111 @@
+local json = require('lib.json')
+
+return fn() {
+    local lvlLoader = {}
+    fn lvlLoader:load(filename){
+      local f = love.filesystem.read(filename)
+      local data = json:decode(f)
+      local r = {}
+
+      r.src = filename
+      r.name = r.src:gsub("(.-)([^\\/]-([^%.]+))$", "%2")
+      r.name = r.name:gsub(".lvl", "")
+
+      r.layerNames = data.layers
+      r.bgColour = (data.lconf or {}).bgColour
+      r.layers = data.imp
+
+      self.loaded = r
+    }
+
+    fn lvlLoader:loadImages(root) {
+      local images = {}
+      foreach layer in self.loaded.layers {
+        foreach entity in layer {
+          if (images[entity.id] == nil) {
+            local t = root .. entity.id
+            images[entity.id] = love.graphics.newImage(t)
+          }
+        }
+      }
+
+      self.images = images
+    }
+
+    fn lvlLoader:setSolidLayers(layers) {
+      local names = self.loaded.layerNames
+      local r = {}
+      foreach layer in layers {
+        ##Flip the table to get index of value
+        r[table_invert(names)[layer]] = true
+      }
+      self.solidLayers = r
+    }
+
+    fn lvlLoader:setTileSize(ts) {
+      self.tileSize = ts
+    }
+
+    fn lvlLoader:empty(x, y, w, h, fun) {
+      ##Check Through Layers
+      for i, layer in ipairs(self.loaded.layers) {
+        if self.solidLayers[i] {
+          foreach entity in layer {
+            local x2 = entity.x * self.tileSize
+            local y2 = entity.y * self.tileSize
+            local w2 = self.tileSize
+            local h2 = self.tileSize
+            if rect_overlap(x, y, w, h, x2, y2, w2, h2) {
+              if fun {
+                if fun(entity) {
+                  return false
+                }
+              } else {
+                return false
+              }
+            }
+          }
+        }
+      }
+
+      ## No Collision
+      return true
+    }
+
+    fn lvlLoader:remove(id) {
+      local found = {}
+      foreach layer in self.loaded.layers {
+        for i = #layer, 1, -1 {
+          local entity = layer[i]
+          if entity {
+            if entity.id == id {
+              table.insert(found, entity)
+              table.remove(layer, i)
+            }
+          }
+        }
+      }
+      return found
+    }
+
+    fn lvlLoader:draw() {
+      local ts = self.tileSize
+      foreach layer in self.loaded.layers {
+        foreach entity in layer {
+          local x, y = nil, nil
+
+          if entity.type == 'Tile' {
+            x, y = entity.x*ts, entity.y*ts
+          }
+
+          if entity.type == 'Instance' {
+            x, y = math.floor(entity.x - ts/2), math.floor(entity.y - ts/2)
+          }
+
+          love.graphics.draw(self.images[entity.id], x, y)
+        }
+      }
+    }
+
+    return lvlLoader
+}

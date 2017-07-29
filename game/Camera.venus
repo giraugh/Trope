@@ -1,0 +1,47 @@
+return fn() {
+  local camera = {
+    x = 0,
+    y = 0,
+    scale = 1,
+    rot = 0,
+  }
+
+  fn camera:attach() {
+    local x, y = 0, 0
+  	local w, h = love.graphics.getWidth(), love.graphics.getHeight()
+
+  	self._sx, self._sy, self._sw, self._sh = love.graphics.getScissor()
+  	if not noclip {
+  	   love.graphics.setScissor(x, y, w, h)
+    }
+
+  	local cx, cy = x+w/2, y+h/2
+  	love.graphics.push()
+  	love.graphics.translate(cx, cy)
+  	love.graphics.scale(self.scale)
+  	love.graphics.rotate(self.rot)
+  	love.graphics.translate(-self.x, -self.y)
+  }
+
+  fn camera:lookAt(...) {
+    self.x, self.y = ...
+  }
+
+  fn camera:trackPlayer() {
+    local py = Player.pos:getY()
+    local px = Player.pos:getX()
+    self.x = lerp(self.x, px, .3)
+    if Player.ghost < Player.ghostAllowed or Player.vel:getY() == Player.maxFallSpeed {
+      self.y = lerp(self.y, py, .07)
+    } else {
+      self.y = lerp(self.y, py, .02)
+    }
+  }
+
+  fn camera:detach() {
+    love.graphics.pop()
+    love.graphics.setScissor(self._sx,self._sy,self._sw,self._sh)
+  }
+
+  return camera
+}

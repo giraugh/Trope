@@ -1,0 +1,85 @@
+local entity = require('game.Entity')
+
+return fn(x, y, levelLoader) {
+  local animations = require('data.animations.player')
+
+  local player = entity(
+    x, y,
+    levelLoader,
+    animations,
+    {w = 14, h = 48},
+    {x = -1, y = 0}
+  )
+
+  player.gravity = 18
+  player.speed = 25
+  player.jumpForce = 370
+  player.wallJumpForce = 270
+  player.ghost = 0
+  player.ghostAllowed = .2
+  player.ghostSlide = 0
+  player.upGravScale = .5
+  player.downGravScale = 1.1
+  player.maxFallSpeed = 400
+  player.runThreshold = 0.01
+
+
+  player.entUpdate = player.update
+  fn player:update(dt) {
+    self:entUpdate(dt)
+
+    ##Reduced Gravity
+    if Input:get('jump') != 0 and self.vel:getY() < 0 {
+      self:addForce(0, self.gravity * self.upGravScale)
+    } else {
+      self:addForce(0, self.gravity * self.downGravScale)
+    }
+
+    ##Max fall speed
+    if self.vel:getY() > self.maxFallSpeed {
+      self.vel:setY(self.maxFallSpeed)
+    }
+
+    ##Flipped
+    if self.vel:getX() != 0 {self.flipped = self.vel:getX() < 0}
+
+    ##Animation
+    if (Input:get('right') - Input:get('left')) != 0 and self.ghost == 0 {
+      self:setAnim('run')
+    } else {
+      self:setAnim('idle')
+    }
+
+    ##Running
+    self:addForce((Input:get('right') - Input:get('left')) * self.speed, 0)
+
+    ##Jumping
+    local dir = sign((Input:get('right') - Input:get('left')))
+    local dirs = {-1, 1}
+    foreach dir in dirs {
+      if not self:empty(self.pos:getX() + (2 * dir), self.pos:getY(), fn(ent){return string.match(ent.id, 'dirt')}) {
+        self.vel:setY(15)
+        if Input:pressed('jump') {
+          self.vel:setY(-self.wallJumpForce)
+          self:addForce(-dir * self.speed * 23, 0)
+        }
+      }
+    }
+
+    if Input:pressed('jump') and (self.ghost < self.ghostAllowed) and self.vel:getY() >= 0 {
+      self:addForce(0, -self.jumpForce)
+    }
+
+    if self:empty(self.pos:getX(), self.pos:getY() + 1) {
+      self.ghost += dt
+    } else {
+      self.ghost = 0
+    }
+  }
+
+  fn player:getPos() {
+    return self.pos:getX(), self.pos:getY()
+  }
+
+  return player
+}

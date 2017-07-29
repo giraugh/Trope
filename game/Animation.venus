@@ -1,0 +1,34 @@
+return fn(frames, delay) {
+  local anim = {}
+  anim.frames = {}
+  anim.frameCount = #frames
+  anim.currentFrame = 1
+  anim.frameDelay = delay
+  anim.timer = 0
+  anim.flipped = false
+
+  foreach i, frame in frames {
+    anim.frames[i] = love.graphics.newImage(frame)
+  }
+
+  fn anim:update(dt) {
+    self.timer += dt
+    if self.timer > self.frameDelay {
+      self.timer = 0
+      self.currentFrame++
+      if self.currentFrame > self.frameCount {
+        self.currentFrame = 1
+      }
+    }
+  }
+
+  fn anim:get() {
+    return self.frames[self.currentFrame]
+  }
+
+  fn anim:draw(...) {
+    love.graphics.draw(self:get(), ...)
+  }
+
+  return anim
+}

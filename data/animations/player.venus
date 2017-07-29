@@ -1,0 +1,14 @@
+return {
+  run = {
+    "imgs/character/player/1.png",
+    "imgs/character/player/2.png",
+    "imgs/character/player/3.png",
+    "imgs/character/player/4.png",
+    delay = .1,
+  },
+  idle = {
+    "imgs/character/player/1.png",
+    delay = .2,
+  },
+  default = "run"
+}
