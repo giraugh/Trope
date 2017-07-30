@@ -1,4 +1,4 @@
-return fn(frames, delay) {
+return fn(frames, delay, offset) {
   local anim = {}
   anim.frames = {}
   anim.frameCount = #frames
@@ -6,6 +6,7 @@ return fn(frames, delay) {
   anim.frameDelay = delay
   anim.timer = 0
   anim.flipped = false
+  anim.offset = offset or {x = 0, y = 0}
 
   foreach i, frame in frames {
     anim.frames[i] = love.graphics.newImage(frame)
@@ -26,8 +27,13 @@ return fn(frames, delay) {
     return self.frames[self.currentFrame]
   }
 
-  fn anim:draw(...) {
-    love.graphics.draw(self:get(), ...)
+  fn anim:draw(x, y, r, sx, sy) {
+    x += self.offset.x
+    y += self.offset.y
+    if sign(sx) == -1 {
+      x -= self.offset.x * 1.5
+    }
+    love.graphics.draw(self:get(), x, y, r, sx, sy)
   }
 
   return anim

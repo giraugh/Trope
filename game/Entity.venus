@@ -15,7 +15,7 @@ return fn(x, y, LevelLoader, animations, size, offset) {
 
   for i, anim in pairs(animations) {
     if i != 'default' {
-      e.animations[i] = animation(anim, anim.delay)
+      e.animations[i] = animation(anim, anim.delay, anim.offset)
     }
   }
 

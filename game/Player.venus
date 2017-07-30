@@ -18,10 +18,11 @@ return fn(x, y, levelLoader) {
   player.ghost = 0
   player.ghostAllowed = .2
   player.ghostSlide = 0
-  player.upGravScale = .5
+  player.upGravScale = .6
   player.downGravScale = 1.1
   player.maxFallSpeed = 400
   player.runThreshold = 0.01
+  player.isSliding = false
 
 
   player.entUpdate = player.update
@@ -51,10 +52,18 @@ return fn(x, y, levelLoader) {
     }
 
     if self.ghost != 0 {
-      if self.vel:getY() < 0 {
-        self:setAnim('rise')
+      if math.abs(self.vel:getX()) > .3 or true{
+        if self.vel:getY() < 0 {
+          self:setAnim('speedRise')
+        } else {
+          self:setAnim('speedFall')
+        }
       } else {
-        self:setAnim('fall')
+        if self.vel:getY() < 0 {
+          self:setAnim('rise')
+        } else {
+          self:setAnim('fall')
+        }
       }
     }
 
@@ -64,8 +73,10 @@ return fn(x, y, levelLoader) {
     ##Jumping
     local dir = sign((Input:get('right') - Input:get('left')))
     local dirs = {-1, 1}
+    self.isSliding = false
     foreach dir in dirs {
       if not self:empty(self.pos:getX() + (2 * dir), self.pos:getY(), fn(ent){return string.match(ent.id, 'dirt')}) {
+        self:setAnim('wall')
         self.vel:setY(15)
         if Input:pressed('jump') {
           self.vel:setY(-self.wallJumpForce)

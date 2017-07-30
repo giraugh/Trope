@@ -17,14 +17,32 @@ return {
   idle = {
     "imgs/character/player/idle/1.png",
     delay = .2,
+    offset = {x = 0, y = 0},
+  },
+  wall = {
+    "imgs/character/player/wall/1.png",
+    delay = .2,
+    offset = {x = 14, y = 0},
+  },
+  speedRise = {
+    "imgs/character/player/speedRise/1.png",
+    delay = .2,
+    offset = {x = 0, y = 0},
   },
   rise = {
-    "imgs/character/player/rise/1.png",
+    "imgs/character/player/fall/1.png",
     delay = .2,
+    offset = {x = 0, y = 0},
+  },
+  speedFall = {
+    "imgs/character/player/speedFall/1.png",
+    delay = .2,
+    offset = {x = 0, y = 0},
   },
   fall = {
     "imgs/character/player/fall/1.png",
     delay = .2,
+    offset = {x = 0, y = 0},
   },
   default = "run"
 }
