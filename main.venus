@@ -44,9 +44,8 @@ fn love.load() {
 fn love.update(dt) {
   Input:update()
   if Running {
-    Chunks:update()
     Player:update(dt)
-    Fade = lerp(Fade, 0, .2)
+    Fade = lerp(Fade, 0, .1)
   } else {
     Fade = lerp(Fade, 255, .2)
     if Fade > 249.8 {

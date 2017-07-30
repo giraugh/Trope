@@ -6,6 +6,16 @@ return fn() {
 
   fn chunks:init() {
     self.chunks = {}
+    self.images = {}
+
+    ##Load images
+    foreach chName in chunkNames {
+      local tchunk = levelLoader()
+      tchunk:load(chName)
+      tchunk:loadImages(tchunk.loaded, 'rece/', self.images)
+    }
+
+    ##Create starting chunks
     self:new()
     self:new()
     self:new()
@@ -20,7 +30,7 @@ return fn() {
     i = i or #self.chunks+1
 
     chunk:load(self:rnd())
-    chunk:loadImages('rece/')
+    chunk.images = self.images
     chunk:setTileSize(16)
     chunk:setSolidLayers({'Main'})
     chunk.inArrow  = chunk:remove('tiles/back-arrow.png')[1]
@@ -60,19 +70,19 @@ return fn() {
     }
   }
 
-  fn chunks:update() {
+  fn chunks:update(x, y) {
+    if not x {x = Player.pos:getX()}
+    if not y {y = Player.pos:getY()}
     local pChunk = Player.chunk
-    if Player.pos:getX() > (pChunk.xOffset + pChunk.width) * pChunk.tileSize {
+    if x > (pChunk.xOffset + pChunk.width) * pChunk.tileSize {
       table.remove(self.chunks, 1)
       self:new()
       Player.chunk = self:getCurrent()
-      Player.pos:setY(Player.pos:getY() - 1)
     }
-    if Player.pos:getX() < pChunk.xOffset * pChunk.tileSize {
+    if x < pChunk.xOffset * pChunk.tileSize {
       table.remove(self.chunks, #self.chunks)
       self:new(1)
       Player.chunk = self:getCurrent()
-      Player.pos:setY(Player.pos:getY() - 1)
     }
   }
 

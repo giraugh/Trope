@@ -1,3 +1,4 @@
+local v = require('lib.vectorial')
 local entity = require('game.Entity')
 
 return fn(x, y, levelLoader) {
@@ -44,6 +45,13 @@ return fn(x, y, levelLoader) {
 
   player.entUpdate = player.update
   fn player:update(dt) {
+
+    ##Check in correct chunk
+
+    local upd = self.pos + ((self.vel * self.damp) * v.Vector2D(dt, dt))
+    Chunks:update(upd:getX(), upd:getY())
+
+    ##Update physics and anim etc
     self:entUpdate(dt)
 
     ##Reduced Gravity

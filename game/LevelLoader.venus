@@ -18,9 +18,8 @@ return fn() {
       self.loaded = r
     }
 
-    fn lvlLoader:loadImages(root) {
-      local images = {}
-      foreach layer in self.loaded.layers {
+    fn lvlLoader:loadImages(level, root, images) {
+      foreach layer in level.layers {
         foreach entity in layer {
           if (images[entity.id] == nil) {
             local t = root .. entity.id
@@ -29,7 +28,7 @@ return fn() {
         }
       }
 
-      self.images = images
+      return images
     }
 
     fn lvlLoader:setSolidLayers(layers) {
