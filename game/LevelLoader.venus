@@ -72,6 +72,31 @@ return fn() {
       return true
     }
 
+    fn lvlLoader:checkFor(x, y, w, h, lfun, fun) {
+      for i, layer in ipairs(self.loaded.layers) {
+        if lfun(self.loaded.layerNames[i]) {
+          foreach entity in layer {
+            local x2 = entity.x * self.tileSize
+            local y2 = entity.y * self.tileSize
+            local w2 = self.tileSize
+            local h2 = self.tileSize
+            if rect_overlap(x, y, w, h, x2, y2, w2, h2) {
+              if fun {
+                if fun(entity) {
+                  return true
+                }
+              } else {
+                return true
+              }
+            }
+          }
+        }
+      }
+
+      ## No Collision
+      return false
+    }
+
     fn lvlLoader:remove(id) {
       local found = {}
       foreach layer in self.loaded.layers {

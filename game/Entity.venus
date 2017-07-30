@@ -23,6 +23,10 @@ return fn(x, y, LevelLoader, animations, size, offset) {
     return self.chunk:empty(x, y, self.size.w, self.size.h, fun)
   }
 
+  fn e:checkFor(x, y, lfun, fun) {
+    return self.chunk:checkFor(x, y, self.size.w, self.size.h, lfun, fun)
+  }
+
   fn e:update(dt) {
 
     ##Apply damping

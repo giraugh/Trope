@@ -12,8 +12,11 @@ local player = require('game.Player')
 local chunks = require('game.Chunks')
 local profiler = require('lib.profiler')
 local slideParticles = require('game.SlideParticles')
+Running = true
+Fade = 249.7
 
 fn love.load() {
+
   ##Create inputs and assign controls
   Input = require('data.controls')
 
@@ -37,8 +40,17 @@ fn love.load() {
 
 fn love.update(dt) {
   Input:update()
-  Chunks:update()
-  Player:update(dt)
+  if Running {
+    Chunks:update()
+    Player:update(dt)
+    Fade = lerp(Fade, 0, .2)
+  } else {
+    Fade = lerp(Fade, 255, .2)
+    if Fade > 249.8 {
+      Running = true
+      love.load()
+    }
+  }
   Camera:trackPlayer()
 }
 
@@ -48,4 +60,11 @@ fn love.draw() {
   Chunks:draw()
   Player:draw()
   Camera:detach()
+  Camera.scale = lerp(Camera.scale, .3, .01)
+
+  if Fade != 0 {
+    love.graphics.setColor(0, 0, 0, Fade)
+    love.graphics.rectangle('fill', 0, 0, love.graphics:getWidth(), love.graphics:getHeight())
+    love.graphics.setColor(255, 255, 255, 255)
+  }
 }

@@ -115,6 +115,16 @@ return fn(x, y, levelLoader) {
       self.ghost = 0
     }
 
+    ##Check for spikes
+    local check = self:checkFor(
+      self.pos:getX(), self.pos:getY(),
+      fn(x){return x == 'BG' or x == 'Background'},
+      fn(ent){return string.match(ent.id, 'spike') or string.match(ent.id, '32')}
+    )
+    if check {
+      Running = false
+    }
+
     ##Update
     SlideParticles:update(dt)
     ##if self.isSliding {
