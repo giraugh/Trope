@@ -144,6 +144,411 @@
             "data": {},
             "rotation": 0,
             "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 8,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 9,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 27,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 33,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 14,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 15,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 16,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 17,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 18,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 19,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 20,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 21,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 22,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 23,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 24,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 25,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 26,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 27,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 28,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 29,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 30,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 31,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 32,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 33,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 34,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 35,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 36,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 37,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 38,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 39,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 40,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
          }
       ],
       [
@@ -2194,42 +2599,6 @@
             "id": "tiles/ground/grass/grndts_14.png",
             "x": 1,
             "y": 23,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike2.png",
-            "x": 9,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike2.png",
-            "x": 8,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike2.png",
-            "x": 33,
-            "y": 29,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike2.png",
-            "x": 27,
-            "y": 24,
             "data": {},
             "rotation": 0,
             "scale": 1

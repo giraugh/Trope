@@ -80,7 +80,7 @@ return fn() {
             local y2 = entity.y * self.tileSize
             local w2 = self.tileSize
             local h2 = self.tileSize
-            if rect_overlap(x, y, w, h, x2, y2, w2, h2) {
+            if rect_overlap(x, y, w, h, x2 + 2.5, y2 + 2.5, w2 - 5, h2 - 5) {
               if fun {
                 if fun(entity) {
                   return true

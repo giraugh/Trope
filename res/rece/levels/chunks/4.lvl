@@ -1,6 +1,277 @@
 {
    "imp": [
-      [],
+      [
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 13,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 14,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 15,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 16,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 17,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 18,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 19,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 20,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 21,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 22,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 23,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 24,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 25,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 26,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 26,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 26,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 26,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 40,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 40,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 41,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 42,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 43,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 44,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 45,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 46,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 47,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 48,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 49,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 50,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": 51,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         }
+      ],
       [
          {
             "type": "Tile",
@@ -10,8 +281,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -21,8 +291,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -32,8 +301,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -43,8 +311,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -54,8 +321,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -65,8 +331,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -76,8 +341,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -87,8 +351,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -98,8 +361,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -109,8 +371,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -120,8 +381,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -131,8 +391,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -142,8 +401,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -153,8 +411,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -164,8 +421,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -175,8 +431,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -186,8 +441,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -197,8 +451,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -208,8 +461,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -219,8 +471,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -230,8 +481,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -241,8 +491,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -252,8 +501,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -263,8 +511,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -274,8 +521,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -285,8 +531,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -296,8 +541,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -307,8 +551,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -318,8 +561,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -329,8 +571,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -340,8 +581,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -351,8 +591,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -362,8 +601,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -373,8 +611,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -384,8 +621,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -395,8 +631,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -406,8 +641,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -417,8 +651,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -428,8 +661,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -439,8 +671,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -450,8 +681,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -461,8 +691,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -472,8 +701,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -483,8 +711,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -494,8 +721,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -505,8 +731,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -516,8 +741,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -527,8 +751,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -538,8 +761,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -549,8 +771,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -560,8 +781,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -571,8 +791,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -582,8 +801,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -593,8 +811,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -604,8 +821,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -615,8 +831,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -626,8 +841,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -637,8 +851,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -648,8 +861,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -659,8 +871,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -670,8 +881,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -681,8 +891,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -692,8 +901,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -703,8 +911,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -714,8 +921,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -725,8 +931,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -736,8 +941,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -747,8 +951,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -758,8 +961,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -769,8 +971,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -780,8 +981,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -791,8 +991,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -802,8 +1001,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -813,8 +1011,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -824,8 +1021,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -835,8 +1031,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -846,8 +1041,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -857,8 +1051,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -868,8 +1061,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -879,8 +1071,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -890,8 +1081,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -901,8 +1091,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -912,8 +1101,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -923,8 +1111,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -934,8 +1121,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -945,8 +1131,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -956,8 +1141,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -967,8 +1151,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -978,8 +1161,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -989,8 +1171,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1000,8 +1181,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1011,8 +1191,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1022,8 +1201,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1033,8 +1211,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1044,8 +1221,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1055,8 +1231,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1066,8 +1241,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1077,8 +1251,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1088,8 +1261,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1099,8 +1271,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1110,8 +1281,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1121,8 +1291,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1132,8 +1301,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1143,8 +1311,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1154,8 +1321,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1165,8 +1331,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1176,8 +1341,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1187,8 +1351,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1198,8 +1361,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1209,8 +1371,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1220,8 +1381,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1231,8 +1391,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1242,8 +1401,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1253,8 +1411,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1264,8 +1421,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1275,8 +1431,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1286,8 +1441,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1297,8 +1451,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1308,8 +1461,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1319,8 +1471,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1330,8 +1481,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1341,8 +1491,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1352,8 +1501,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1363,8 +1511,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1374,8 +1521,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1385,8 +1531,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1396,8 +1541,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1407,8 +1551,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1418,8 +1561,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1429,8 +1571,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1440,8 +1581,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1451,8 +1591,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1462,8 +1601,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1473,8 +1611,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1484,8 +1621,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1495,8 +1631,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1506,8 +1641,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1517,8 +1651,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1528,8 +1661,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1539,8 +1671,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1550,8 +1681,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1561,8 +1691,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1572,8 +1701,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1583,8 +1711,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1594,8 +1721,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1605,8 +1731,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1616,8 +1741,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1627,8 +1751,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1638,8 +1761,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1649,8 +1771,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1660,8 +1781,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1671,8 +1791,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1682,8 +1801,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1693,8 +1811,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1704,8 +1821,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1715,8 +1831,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1726,8 +1841,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1737,8 +1851,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1748,8 +1861,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1759,8 +1871,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1770,8 +1881,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1781,8 +1891,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1792,8 +1901,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1803,8 +1911,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1814,8 +1921,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1825,8 +1931,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1836,8 +1941,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1847,8 +1951,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1858,8 +1961,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1869,8 +1971,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1880,8 +1981,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1891,8 +1991,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1902,8 +2001,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1913,8 +2011,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1924,8 +2021,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1935,8 +2031,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1946,8 +2041,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1957,8 +2051,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1968,8 +2061,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1979,8 +2071,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1990,8 +2081,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2001,8 +2091,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2012,8 +2101,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2023,8 +2111,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2034,8 +2121,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2045,8 +2131,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2056,8 +2141,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2067,8 +2151,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2078,8 +2161,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2089,8 +2171,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2100,8 +2181,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2111,8 +2191,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2122,8 +2201,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2133,8 +2211,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2144,8 +2221,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2155,8 +2231,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2166,8 +2241,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2177,8 +2251,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2188,8 +2261,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2199,8 +2271,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2210,8 +2281,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2221,8 +2291,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2232,8 +2301,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2243,8 +2311,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2254,8 +2321,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2265,8 +2331,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2276,8 +2341,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2287,8 +2351,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2298,8 +2361,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2309,8 +2371,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2320,8 +2381,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2331,8 +2391,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2342,8 +2401,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2353,8 +2411,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2364,8 +2421,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 3
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2375,8 +2431,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 3
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2386,8 +2441,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2397,8 +2451,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2408,8 +2461,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2419,8 +2471,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -2430,8 +2481,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2441,8 +2491,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 3
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2452,8 +2501,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 3
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2463,8 +2511,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2474,8 +2521,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2485,8 +2531,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 3
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2496,8 +2541,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          }
       ],
       [

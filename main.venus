@@ -14,8 +14,10 @@ local profiler = require('lib.profiler')
 local slideParticles = require('game.SlideParticles')
 Running = true
 Fade = 249.7
+local pStart = 0
 
 fn love.load() {
+  love.graphics.setFont(love.graphics.newFont(50))
 
   ##Create inputs and assign controls
   Input = require('data.controls')
@@ -31,6 +33,7 @@ fn love.load() {
   Chunks:init()
   local firstChunkEntry = Chunks:getCurrent().inArrow
   Player = player((Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16), (Chunks:getCurrent().yOffset * 16) + ((firstChunkEntry.y - 3) * 16), Chunks:getCurrent())
+  pStart = (Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16)
 
   ##Create camera and point it at player
   Camera = camera()
@@ -60,7 +63,9 @@ fn love.draw() {
   Chunks:draw()
   Player:draw()
   Camera:detach()
-  Camera.scale = lerp(Camera.scale, .3, .01)
+  ##Camera.scale = lerp(Camera.scale, .3, .01)
+
+  love.graphics.print(math.floor((Player.pos:getX() - pStart) / 16) .. ' km', love.graphics:getWidth() - 200, love.graphics:getHeight() - 100)
 
   if Fade != 0 {
     love.graphics.setColor(0, 0, 0, Fade)
