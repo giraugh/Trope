@@ -23,7 +23,24 @@ return fn(x, y, levelLoader) {
   player.maxFallSpeed = 400
   player.runThreshold = 0.01
   player.isSliding = false
+  player.slidingTime = 0
 
+
+  player.entDraw = player.draw
+  fn player:draw() {
+    self:entDraw()
+    if self.isSliding {
+      local x, y = player:getPos()
+      if self.flipped {
+        x += self.size.w + 3
+      } else {
+        x -= 3
+      }
+      love.graphics.setAlpha(math.max(0, math.min(255, 255 * (self.slidingTime - .2 / 1))))
+      love.graphics.draw(SlideParticles, x, y, 0, self.flipped and -1 or 1, 1)
+      love.graphics.setAlpha(255)
+    }
+  }
 
   player.entUpdate = player.update
   fn player:update(dt) {
@@ -51,7 +68,25 @@ return fn(x, y, levelLoader) {
       self:setAnim('idle')
     }
 
-    if self.ghost != 0 {
+    ##Jumping
+    local dir = sign((Input:get('right') - Input:get('left')))
+    local dirs = {-1, 1}
+    self.isSliding = false
+    foreach dir in dirs {
+      if not self:empty(self.pos:getX() + (2 * dir), self.pos:getY(), fn(ent){return string.match(ent.id, 'dirt')}) {
+        self:setAnim('wall')
+        self.flipped = dir > 0
+        self.isSliding = true
+        self.vel:setY(15)
+        if Input:pressed('jump') {
+          self.vel:setY(-self.wallJumpForce)
+          self:addForce(-dir * self.speed * 23, 0)
+        }
+      }
+    }
+    if self.isSliding {self.slidingTime += dt} else {self.slidingTime = 0}
+
+    if self.ghost != 0 and not self.isSliding {
       if math.abs(self.vel:getX()) > .3 or true{
         if self.vel:getY() < 0 {
           self:setAnim('speedRise')
@@ -70,21 +105,6 @@ return fn(x, y, levelLoader) {
     ##Running
     self:addForce((Input:get('right') - Input:get('left')) * self.speed, 0)
 
-    ##Jumping
-    local dir = sign((Input:get('right') - Input:get('left')))
-    local dirs = {-1, 1}
-    self.isSliding = false
-    foreach dir in dirs {
-      if not self:empty(self.pos:getX() + (2 * dir), self.pos:getY(), fn(ent){return string.match(ent.id, 'dirt')}) {
-        self:setAnim('wall')
-        self.vel:setY(15)
-        if Input:pressed('jump') {
-          self.vel:setY(-self.wallJumpForce)
-          self:addForce(-dir * self.speed * 23, 0)
-        }
-      }
-    }
-
     if Input:pressed('jump') and (self.ghost < self.ghostAllowed) and self.vel:getY() >= 0 {
       self:addForce(0, -self.jumpForce)
     }
@@ -94,6 +114,12 @@ return fn(x, y, levelLoader) {
     } else {
       self.ghost = 0
     }
+
+    ##Update
+    SlideParticles:update(dt)
+    ##if self.isSliding {
+      SlideParticles:emit(1)
+    ##}
   }
 
   fn player:getPos() {

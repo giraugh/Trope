@@ -17,6 +17,9 @@ fn love.load() {
   ##Create inputs and assign controls
   Input = require('data.controls')
 
+  ##Background Image
+  BGimage = love.graphics.newImage('imgs/background.png')
+
   ##Particle Systems
   SlideParticles = slideParticles()
 
@@ -40,6 +43,7 @@ fn love.update(dt) {
 }
 
 fn love.draw() {
+  love.graphics.draw(BGimage, 0, -200, 0, 2)
   Camera:attach()
   Chunks:draw()
   Player:draw()
