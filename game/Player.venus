@@ -7,8 +7,8 @@ return fn(x, y, levelLoader) {
     x, y,
     levelLoader,
     animations,
-    {w = 14, h = 48},
-    {x = -1, y = 0}
+    {w = 17, h = 38},
+    {x = -26, y = -23}
   )
 
   player.gravity = 18
@@ -41,13 +41,21 @@ return fn(x, y, levelLoader) {
     }
 
     ##Flipped
-    if self.vel:getX() != 0 {self.flipped = self.vel:getX() < 0}
+    if self.vel:getX() != 0 {self.flipped = self.vel:getX() > 0}
 
     ##Animation
     if (Input:get('right') - Input:get('left')) != 0 and self.ghost == 0 {
       self:setAnim('run')
     } else {
       self:setAnim('idle')
+    }
+
+    if self.ghost != 0 {
+      if self.vel:getY() < 0 {
+        self:setAnim('rise')
+      } else {
+        self:setAnim('fall')
+      }
     }
 
     ##Running

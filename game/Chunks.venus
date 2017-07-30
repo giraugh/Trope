@@ -40,16 +40,13 @@ return fn() {
       }
       foreach layer in chunk.loaded.layers {
         foreach entity in layer {
-          ###
-
-
-          BIG NOTE HERE I MADE A MISTAKE
-          INSTANCES MOVE DIFFERENT
-
-
-          ###
-          entity.x += chunk.xOffset
-          entity.y += chunk.yOffset
+          if entity.type == 'Tile' {
+            entity.x += chunk.xOffset
+            entity.y += chunk.yOffset
+          } else {
+            entity.x += chunk.xOffset * chunk.tileSize
+            entity.y += chunk.yOffset * chunk.tileSize
+          }
         }
       }
     }
@@ -68,14 +65,12 @@ return fn() {
     if Player.pos:getX() > (pChunk.xOffset + pChunk.width) * pChunk.tileSize {
       table.remove(self.chunks, 1)
       self:new()
-      print(#self.chunks)
       Player.chunk = self:getCurrent()
       Player.pos:setY(Player.pos:getY() - 1)
     }
     if Player.pos:getX() < pChunk.xOffset * pChunk.tileSize {
       table.remove(self.chunks, #self.chunks)
       self:new(1)
-      print(#self.chunks)
       Player.chunk = self:getCurrent()
       Player.pos:setY(Player.pos:getY() - 1)
     }

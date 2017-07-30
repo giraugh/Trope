@@ -1,13 +1,29 @@
 return {
   run = {
-    "imgs/character/player/1.png",
-    "imgs/character/player/2.png",
-    "imgs/character/player/3.png",
-    "imgs/character/player/4.png",
-    delay = .1,
+    "imgs/character/player/run/1.png",
+    "imgs/character/player/run/2.png",
+    "imgs/character/player/run/3.png",
+    "imgs/character/player/run/4.png",
+    "imgs/character/player/run/5.png",
+    "imgs/character/player/run/6.png",
+    "imgs/character/player/run/7.png",
+    "imgs/character/player/run/8.png",
+    "imgs/character/player/run/9.png",
+    "imgs/character/player/run/10.png",
+    "imgs/character/player/run/11.png",
+    "imgs/character/player/run/12.png",
+    delay = .06,
   },
   idle = {
-    "imgs/character/player/1.png",
+    "imgs/character/player/idle/1.png",
+    delay = .2,
+  },
+  rise = {
+    "imgs/character/player/rise/1.png",
+    delay = .2,
+  },
+  fall = {
+    "imgs/character/player/fall/1.png",
     delay = .2,
   },
   default = "run"

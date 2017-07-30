@@ -25,7 +25,7 @@ fn love.load() {
   ##Create camera and point it at player
   Camera = camera()
   Camera:lookAt(Player:getPos())
-  Camera.scale = .3
+  Camera.scale = 2
 }
 
 fn love.update(dt) {

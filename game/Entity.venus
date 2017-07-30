@@ -73,9 +73,10 @@ return fn(x, y, LevelLoader, animations, size, offset) {
     local x = self.pos:getX() + self.offset.x
     local y = self.pos:getY() + self.offset.y
     if self.flipped {
-      x += self:currentAnim():get():getWidth()
+      x += self:currentAnim():get():getWidth() - self.offset.x / 2
     }
     self:currentAnim():draw(x, y, 0, self.flipped and -1 or 1, 1)
+    ##love.graphics.rectangle('line', self.pos:getX(), self.pos:getY(), self.size.w, self.size.h)
   }
 
   fn e:addForce(x, y) {
