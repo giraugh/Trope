@@ -166,8 +166,8 @@
          {
             "type": "Tile",
             "id": "tiles/decor/grndts_33.png",
-            "x": 9,
-            "y": -1,
+            "x": 8,
+            "y": 0,
             "data": {},
             "rotation": 0,
             "scale": 1
@@ -175,8 +175,8 @@
          {
             "type": "Tile",
             "id": "tiles/decor/grndts_33.png",
-            "x": 8,
-            "y": -1,
+            "x": 7,
+            "y": 0,
             "data": {},
             "rotation": 0,
             "scale": 1
@@ -1447,7 +1447,18 @@
          {
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_18.png",
-            "x": 8,
+            "x": 7,
+            "y": 6,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 7,
             "y": 5,
             "data": {},
             "rotation": 0,
@@ -1458,7 +1469,7 @@
          {
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_18.png",
-            "x": 8,
+            "x": 7,
             "y": 4,
             "data": {},
             "rotation": 0,
@@ -1469,7 +1480,7 @@
          {
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_18.png",
-            "x": 8,
+            "x": 7,
             "y": 3,
             "data": {},
             "rotation": 0,
@@ -1480,7 +1491,7 @@
          {
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_18.png",
-            "x": 8,
+            "x": 7,
             "y": 2,
             "data": {},
             "rotation": 0,
@@ -1490,20 +1501,9 @@
          },
          {
             "type": "Tile",
-            "id": "tiles/ground/grass/grndts_18.png",
-            "x": 8,
-            "y": 1,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass",
-            "aup": 2
-         },
-         {
-            "type": "Tile",
             "id": "tiles/ground/grass/grndts_17.png",
-            "x": 8,
-            "y": 6,
+            "x": 7,
+            "y": 7,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1568,18 +1568,7 @@
          {
             "type": "Tile",
             "id": "tiles/ground/dirt/grndts_02.png",
-            "x": 9,
-            "y": 3,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "dirt",
-            "aup": 2
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/dirt/grndts_02.png",
-            "x": 9,
+            "x": 8,
             "y": 4,
             "data": {},
             "rotation": 0,
@@ -1589,9 +1578,20 @@
          },
          {
             "type": "Tile",
-            "id": "tiles/ground/dgblend/grndts_27.png",
-            "x": 9,
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 8,
             "y": 5,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dgblend/grndts_27.png",
+            "x": 8,
+            "y": 6,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1601,8 +1601,8 @@
          {
             "type": "Tile",
             "id": "tiles/ground/dirt/grndts_02.png",
-            "x": 9,
-            "y": 2,
+            "x": 8,
+            "y": 3,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1612,8 +1612,8 @@
          {
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_15.png",
-            "x": 9,
-            "y": 6,
+            "x": 8,
+            "y": 7,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1623,8 +1623,8 @@
          {
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_13.png",
-            "x": 9,
-            "y": 0,
+            "x": 8,
+            "y": 1,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1634,8 +1634,8 @@
          {
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_23.png",
-            "x": 8,
-            "y": 0,
+            "x": 7,
+            "y": 1,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1645,8 +1645,8 @@
          {
             "type": "Tile",
             "id": "tiles/ground/dgblend/grndts_26.png",
-            "x": 9,
-            "y": 1,
+            "x": 8,
+            "y": 2,
             "data": {},
             "rotation": 0,
             "scale": 1,
