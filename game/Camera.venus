@@ -23,18 +23,24 @@ return fn() {
   	love.graphics.translate(-self.x, -self.y)
   }
 
+  fn camera:inside(x, y) {
+    local cx, cy = self.x - love.graphics.getWidth()/2, self.y-love.graphics.getHeight()/2
+    local cw, ch = love.graphics.getWidth(), love.graphics.getHeight()
+    return x >= cx and x <= cx+cw and y >= cy and y <= cy+ch
+  }
+
   fn camera:lookAt(...) {
     self.x, self.y = ...
   }
 
-  fn camera:trackPlayer() {
+  fn camera:trackPlayer(dt) {
     local py = Player.pos:getY()
     local px = Player.pos:getX()
-    self.x = lerp(self.x, px, .3)
+    self.x = lerp(self.x, px, .3 * (dt / 0.0166))
     if Player.ghost < Player.ghostAllowed or Player.vel:getY() == Player.maxFallSpeed {
-      self.y = lerp(self.y, py, .07)
+      self.y = lerp(self.y, py, .07 * (dt / 0.0166))
     } else {
-      self.y = lerp(self.y, py, .02)
+      self.y = lerp(self.y, py, .02 * (dt / 0.0166))
     }
   }
 

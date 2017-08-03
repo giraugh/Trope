@@ -65,8 +65,18 @@ return fn() {
   }
 
   fn chunks:draw() {
-    foreach chunk in self.chunks {
-      chunk:draw()
+    local cx, cy = Camera.x - love.graphics.getWidth()/2, Camera.y-love.graphics.getHeight()/2
+    local cw, ch = love.graphics.getWidth(), love.graphics.getHeight()
+    foreach i, chunk in self.chunks {
+      if DoShowChunkBorders {
+        love.graphics.setLineWidth(5)
+        love.graphics.line(chunk.xOffset * chunk.tileSize, cy, chunk.xOffset * chunk.tileSize, cy+love.graphics:getHeight())
+        love.graphics.setLineWidth(1) 
+      }
+      local x, y, w, h = chunk.xOffset * chunk.tileSize, cy-1, chunk.width * chunk.tileSize, ch*2
+      if rect_overlap(x, y, w, h, cx, cy, cw, ch) {
+        chunk:draw()
+      }
     }
   }
 

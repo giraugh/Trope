@@ -1,0 +1,101 @@
+local v = require('lib.vectorial')
+
+return fn() {
+  local water = {}
+
+  fn water:init() {
+    self.image = love.graphics.newImage('imgs/particles/water.png')
+    self.particles = {}
+  }
+
+  fn water:update(dt) {
+    for i = #self.particles, 1, -1 {
+      local particle = self.particles[i]
+
+      particle.vel:setY(particle.vel:getY() + (4/0.0166)*dt)
+
+      ##Calculate Horizontal and Vertical Update
+      local usd = dt * 3
+      local upd = particle.vel * v.Vector2D(usd, usd)
+      local hupd = upd:getX()
+      local vupd = upd:getY()
+
+      ##Horizontal Collision
+      if particle:empty(particle.pos:getX() + hupd, particle.pos:getY()) {
+        particle.pos:setX(particle.pos:getX() + hupd)
+      } else {
+        local lim = 0
+        while particle:empty(particle.pos:getX() + sign(hupd), particle.pos:getY()) {
+          particle.pos:setX(particle.pos:getX() + sign(hupd))
+          lim++
+          if lim > 64 {
+            break
+          }
+        }
+        particle.vel:setX(-particle.vel:getX() * .3)
+      }
+
+      ##Vertical collision
+      if particle:empty(particle.pos:getX(), particle.pos:getY() + vupd) {
+        particle.pos:setY(particle.pos:getY() + vupd)
+      } else {
+        local lim = 0
+        while particle:empty(particle.pos:getX(), particle.pos:getY() + sign(vupd)) {
+          particle.pos:setY(particle.pos:getY() + sign(vupd))
+          lim++
+          if lim > 64 {
+            break
+          }
+        }
+        particle.vel:setY(-particle.vel:getY() * .4)
+        particle.rotation += .01
+      }
+
+      ##Slow down x and roll
+      particle.vel:setX(lerp(particle.vel:getX(), 0, .005))
+
+      ##Fade out
+      particle.alpha = lerp(particle.alpha, 0, .02)
+      if particle.alpha < .01 {
+        table.remove(self.particles, i)
+      }
+    }
+  }
+
+  fn water:emit(num, x, y) {
+    y += 20
+    x += 10
+    for i = 1, num {
+      local part = {}
+
+      part.pos    = v.Vector2D(love.math.random(x - 10, x + 10), y)
+      part.vel    = (Player.vel * v.Vector2D(.15, .15)) + v.Vector2D(-love.math.random(-40, 40), love.math.random(-100, 0))
+      part.empty  = self.empty
+      part.getPos = self.getPos
+      part.alpha  = 350
+      part.rotation = love.math.random(0, 2 * 3.14)
+      part.scale = love.math.random(.9, 1.05)
+
+      table.insert(self.particles, part)
+    }
+  }
+
+  fn water:empty(x, y, fun) {
+    return Player.chunk:empty(x, y, 5 * self.scale, 5 * self.scale, fun)
+  }
+
+  fn water:getPos() {
+    return self.pos:getX(), self.pos:getY()
+  }
+
+  fn water:draw() {
+    foreach particle in self.particles {
+      love.graphics.setColor(255, 255, 255, math.min(255, particle.alpha))
+      local x, y = particle:getPos()
+      love.graphics.draw(self.image, x, y, particle.rotation, particle.scale)
+      love.graphics.setColor(255, 255, 255, 255)
+    }
+  }
+
+  return water
+}

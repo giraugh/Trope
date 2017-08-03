@@ -6381,6 +6381,15 @@
             "data": {},
             "rotation": 0,
             "scale": 1
+         },
+         {
+            "type": "Instance",
+            "id": "instances/WaterCup.png",
+            "x": 376,
+            "y": 50.5,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
          }
       ]
    ],

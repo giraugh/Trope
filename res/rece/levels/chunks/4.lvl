@@ -129,8 +129,305 @@
          },
          {
             "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 26,
+            "id": "tiles/decor/grndts_33.png",
+            "x": 32,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 33,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 34,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 35,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 30,
+            "y": -6,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 31,
+            "y": -6,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 32,
+            "y": -6,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 33,
+            "y": -6,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 47,
+            "y": 10,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_35.png",
+            "x": 48,
+            "y": 10,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_34.png",
+            "x": 43,
+            "y": 8,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 2,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 3,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 4,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 5,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 6,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 7,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 8,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 9,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 37,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 38,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 39,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 40,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 41,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 42,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 43,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 44,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 45,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 46,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 47,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 48,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 49,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 50,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike1.png",
+            "x": 51,
             "y": 17,
             "data": {},
             "rotation": 0,
@@ -139,8 +436,8 @@
          {
             "type": "Tile",
             "id": "tiles/decor/spike-outofbound.png",
-            "x": 26,
-            "y": 16,
+            "x": 27,
+            "y": 18,
             "data": {},
             "rotation": 0,
             "scale": 1
@@ -148,8 +445,8 @@
          {
             "type": "Tile",
             "id": "tiles/decor/spike-outofbound.png",
-            "x": 26,
-            "y": 15,
+            "x": 28,
+            "y": 18,
             "data": {},
             "rotation": 0,
             "scale": 1
@@ -157,8 +454,8 @@
          {
             "type": "Tile",
             "id": "tiles/decor/spike-outofbound.png",
-            "x": 40,
-            "y": 15,
+            "x": 29,
+            "y": 18,
             "data": {},
             "rotation": 0,
             "scale": 1
@@ -166,107 +463,8 @@
          {
             "type": "Tile",
             "id": "tiles/decor/spike-outofbound.png",
-            "x": 40,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 41,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 42,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 43,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 44,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 45,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 46,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 47,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 48,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 49,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 50,
-            "y": 16,
-            "data": {},
-            "rotation": 0,
-            "scale": 1
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/decor/spike-outofbound.png",
-            "x": 51,
-            "y": 16,
+            "x": 30,
+            "y": 18,
             "data": {},
             "rotation": 0,
             "scale": 1
@@ -541,8 +739,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -552,8 +749,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -563,8 +759,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -574,8 +769,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -655,8 +849,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -666,8 +859,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -677,8 +869,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -688,8 +879,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -699,8 +889,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -710,8 +899,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 3
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -721,8 +909,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -732,8 +919,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -743,8 +929,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -754,8 +939,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -765,8 +949,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -776,8 +959,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -787,8 +969,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -848,8 +1029,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -859,8 +1039,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -870,8 +1049,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -881,8 +1059,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -892,85 +1069,13 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 1
+            "auto": "grass"
          },
          {
             "type": "Tile",
-            "id": "tiles/ground/grass/grndts_16.png",
+            "id": "tiles/ground/grass/grndts_20.png",
             "x": 17,
             "y": 6,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass",
-            "aup": 2
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_15.png",
-            "x": 18,
-            "y": 6,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_12.png",
-            "x": 26,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_16.png",
-            "x": 26,
-            "y": 14,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_16.png",
-            "x": 27,
-            "y": 14,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_12.png",
-            "x": 27,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_16.png",
-            "x": 28,
-            "y": 14,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_12.png",
-            "x": 28,
-            "y": 13,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -981,16 +1086,6 @@
             "id": "tiles/ground/dirt/grndts_02.png",
             "x": 18,
             "y": 4,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "dirt"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/dirt/grndts_02.png",
-            "x": 18,
-            "y": 3,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1021,16 +1116,6 @@
             "id": "tiles/ground/dgblend/grndts_26.png",
             "x": 18,
             "y": 0,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "dirt"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/dgblend/grndts_27.png",
-            "x": 18,
-            "y": 5,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1179,68 +1264,8 @@
          {
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_12.png",
-            "x": 29,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_16.png",
-            "x": 29,
-            "y": 14,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_16.png",
-            "x": 30,
-            "y": 14,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_12.png",
-            "x": 30,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_12.png",
-            "x": 31,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_16.png",
-            "x": 31,
-            "y": 14,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_12.png",
             "x": 32,
-            "y": 13,
+            "y": 16,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1250,7 +1275,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_16.png",
             "x": 32,
-            "y": 14,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1260,7 +1285,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_12.png",
             "x": 33,
-            "y": 13,
+            "y": 16,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1270,7 +1295,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_16.png",
             "x": 33,
-            "y": 14,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1280,7 +1305,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_16.png",
             "x": 34,
-            "y": 14,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1290,7 +1315,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_12.png",
             "x": 34,
-            "y": 13,
+            "y": 16,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1300,7 +1325,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_16.png",
             "x": 35,
-            "y": 14,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1310,7 +1335,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_12.png",
             "x": 35,
-            "y": 13,
+            "y": 16,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1320,7 +1345,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_16.png",
             "x": 36,
-            "y": 14,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1330,7 +1355,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_12.png",
             "x": 36,
-            "y": 13,
+            "y": 16,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1340,7 +1365,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_16.png",
             "x": 37,
-            "y": 14,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1350,7 +1375,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_12.png",
             "x": 37,
-            "y": 13,
+            "y": 16,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1360,7 +1385,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_12.png",
             "x": 38,
-            "y": 13,
+            "y": 16,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1370,7 +1395,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_22.png",
             "x": 39,
-            "y": 13,
+            "y": 16,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1378,9 +1403,9 @@
          },
          {
             "type": "Tile",
-            "id": "tiles/ground/grass/grndts_16.png",
+            "id": "tiles/ground/grass/grndts_20.png",
             "x": 39,
-            "y": 14,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1390,27 +1415,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_16.png",
             "x": 38,
-            "y": 14,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_23.png",
-            "x": 25,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_17.png",
-            "x": 25,
-            "y": 14,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1424,8 +1429,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1435,8 +1439,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1446,8 +1449,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1457,8 +1459,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "grass",
-            "aup": 2
+            "auto": "grass"
          },
          {
             "type": "Tile",
@@ -1924,7 +1925,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_18.png",
             "x": 39,
-            "y": 12,
+            "y": 15,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1934,7 +1935,7 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_23.png",
             "x": 39,
-            "y": 11,
+            "y": 14,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -1944,37 +1945,37 @@
             "type": "Tile",
             "id": "tiles/ground/grass/grndts_13.png",
             "x": 40,
-            "y": 11,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_14.png",
-            "x": 40,
-            "y": 12,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_14.png",
-            "x": 40,
-            "y": 13,
-            "data": {},
-            "rotation": 0,
-            "scale": 1,
-            "auto": "grass"
-         },
-         {
-            "type": "Tile",
-            "id": "tiles/ground/grass/grndts_15.png",
-            "x": 40,
             "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 40,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 40,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 40,
+            "y": 17,
             "data": {},
             "rotation": 0,
             "scale": 1,
@@ -2232,7 +2233,7 @@
          },
          {
             "type": "Tile",
-            "id": "tiles/ground/grass/grndts_18.png",
+            "id": "tiles/ground/grass/grndts_20.png",
             "x": 52,
             "y": 19,
             "data": {},
@@ -2242,7 +2243,7 @@
          },
          {
             "type": "Tile",
-            "id": "tiles/ground/grass/grndts_18.png",
+            "id": "tiles/ground/grass/grndts_22.png",
             "x": 52,
             "y": 18,
             "data": {},
@@ -2528,8 +2529,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 3
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2539,8 +2539,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2550,8 +2549,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 4
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2561,8 +2559,7 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
          },
          {
             "type": "Tile",
@@ -2572,8 +2569,477 @@
             "data": {},
             "rotation": 0,
             "scale": 1,
-            "auto": "dirt",
-            "aup": 2
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 17,
+            "y": 7,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 17,
+            "y": 10,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 17,
+            "y": 9,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 17,
+            "y": 8,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 17,
+            "y": 11,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 17,
+            "y": 12,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 17,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_17.png",
+            "x": 17,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_15.png",
+            "x": 18,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 18,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 18,
+            "y": 5,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 18,
+            "y": 6,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 18,
+            "y": 7,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 18,
+            "y": 8,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 18,
+            "y": 9,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 18,
+            "y": 10,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 18,
+            "y": 11,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dgblend/grndts_27.png",
+            "x": 18,
+            "y": 12,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/dirt/grndts_02.png",
+            "x": 18,
+            "y": 3,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "dirt"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_23.png",
+            "x": 31,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_17.png",
+            "x": 31,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 51,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 51,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 39,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_17.png",
+            "x": 39,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_21.png",
+            "x": 40,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 40,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 41,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 41,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 42,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 42,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 43,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 43,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 44,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 44,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 45,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 45,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 46,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 46,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 47,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 47,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 48,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 48,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 49,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 49,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 50,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 50,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass"
          }
       ],
       [
@@ -4213,6 +4679,15 @@
             "id": "tiles/next-arrow.png",
             "x": 54,
             "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Instance",
+            "id": "instances/WaterCup.png",
+            "x": 549.5,
+            "y": 226.5,
             "data": {},
             "rotation": 0,
             "scale": 1

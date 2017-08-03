@@ -5,7 +5,7 @@ return fn(x, y, LevelLoader, animations, size, offset) {
   local e = {}
   e.pos = v.Vector2D(x, y)
   e.vel = v.Vector2D(0, 0)
-  e.damp = v.Vector2D(.88, 1)
+  e.damp = v.Vector2D(.11, 0)
   e.size = size
   e.offset = offset or {x = 0, y = 0}
   e.anim = animations.default
@@ -30,7 +30,9 @@ return fn(x, y, LevelLoader, animations, size, offset) {
   fn e:update(dt) {
 
     ##Apply damping
-    self.vel = self.vel * self.damp
+    local yy = self.vel:getY()
+    local dmp = (self.vel * self.damp) * ((v.Vector2D(dt, dt) / v.Vector2D(0.0166, 0.0166)))
+    self.vel = self.vel - dmp
 
     ##Calculate Horizontal and Vertical Update
     local upd = self.vel * v.Vector2D(dt, dt)
@@ -84,7 +86,8 @@ return fn(x, y, LevelLoader, animations, size, offset) {
   }
 
   fn e:addForce(x, y) {
-    self.vel += v.Vector2D(x, y)
+    local dt = love.timer.getDelta()
+    self.vel += v.Vector2D(x, y) * v.Vector2D(dt, dt)
   }
 
   return e

@@ -123,10 +123,12 @@ return fn() {
           }
 
           if entity.type == 'Instance' {
-            x, y = math.floor(entity.x - ts/2), math.floor(entity.y - ts/2)
+            x, y = entity.x - ts/2, entity.y - ts/2
           }
 
-          love.graphics.draw(self.images[entity.id], x, y)
+          if Camera:inside(x, y) {
+            love.graphics.draw(self.images[entity.id], x, y)
+          }
         }
       }
     }

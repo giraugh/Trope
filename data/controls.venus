@@ -4,5 +4,11 @@ return require('lib.baton').new({
   right = {'key:right', 'key:d', 'axis:leftx+', 'button:dpright'},
   jump = {'key:up', 'key:z', 'key:w', 'key:space', 'axis:lefty-', 'button:dpup', 'button:a'},
   attack = {'key:x'},
+  esc = {'key:escape', 'button:start'},
+
+  shaderToggle = {'key:u'},
+  particleToggle = {'key:p'},
+  borderToggle = {'key:i'},
+  vsyncToggle = {'key:o'},
 
 }, love.joystick.getJoysticks()[1])

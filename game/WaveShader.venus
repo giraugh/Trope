@@ -1,0 +1,28 @@
+local pshader = [[
+  uniform float time;
+
+  vec4 effect(vec4 color, Image texture, vec2 texture_coords, vec2 screen_coords)
+  {
+      vec2 p = texture_coords;
+      color += vec4(sin(time + p.x * 2) / 30, cos(time / 10) / 30, 0, 0);
+      vec4 texturecolor = Texel(texture, texture_coords);
+      return texturecolor * color;
+  }
+]]
+
+local vshader = [[
+  uniform float time;
+
+  vec4 position( mat4 transform_projection, vec4 vertex_position )
+  {
+    vec4 pos = transform_projection * vertex_position;
+
+    if (pos.y > -.8) {
+      pos.y += sin(vertex_position.x + time) / 20;
+    }
+
+    return pos;
+  }
+]]
+
+return love.graphics.newShader(pshader, vshader)

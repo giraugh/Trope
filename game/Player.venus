@@ -12,10 +12,11 @@ return fn(x, y, levelLoader) {
     {x = -26, y = -23}
   )
 
-  player.gravity = 18
-  player.speed = 25
+  player.gravity = 18 / 0.0166
+  player.speed = 25 / 0.0166
   player.jumpForce = 370
   player.wallJumpForce = 270
+  player.wallJumpHForce = 575
   player.ghost = 0
   player.ghostAllowed = .2
   player.ghostSlide = 0
@@ -25,13 +26,16 @@ return fn(x, y, levelLoader) {
   player.runThreshold = 0.01
   player.isSliding = false
   player.slidingTime = 0
+  player.slidingDir = 0
+  player.slidingGhost = 0
 
 
   player.entDraw = player.draw
   fn player:draw() {
     self:entDraw()
-    if self.isSliding {
-      local x, y = player:getPos()
+    if DoParticles {WaterParticles:draw()}
+    if self.isSliding and DoParticles {
+      local x, y = self:getPos()
       if self.flipped {
         x += self.size.w + 3
       } else {
@@ -45,10 +49,9 @@ return fn(x, y, levelLoader) {
 
   player.entUpdate = player.update
   fn player:update(dt) {
-
     ##Check in correct chunk
-
-    local upd = self.pos + ((self.vel * self.damp) * v.Vector2D(dt, dt))
+    local dmp = (self.vel * self.damp) * ((v.Vector2D(dt, dt) / v.Vector2D(0.0166, 0.0166)))
+    local upd = self.pos + ((self.vel - dmp) * v.Vector2D(dt, dt))
     Chunks:update(upd:getX(), upd:getY())
 
     ##Update physics and anim etc
@@ -76,23 +79,35 @@ return fn(x, y, levelLoader) {
       self:setAnim('idle')
     }
 
-    ##Jumping
+    ##Sliding
     local dir = sign((Input:get('right') - Input:get('left')))
     local dirs = {-1, 1}
     self.isSliding = false
     foreach dir in dirs {
-      if not self:empty(self.pos:getX() + (2 * dir), self.pos:getY(), fn(ent){return string.match(ent.id, 'dirt')}) {
+      if not self:empty(self.pos:getX() + (1 * dir), self.pos:getY(), fn(ent){return string.match(ent.id, 'dirt')}) {
         self:setAnim('wall')
         self.flipped = dir > 0
         self.isSliding = true
-        self.vel:setY(15)
-        if Input:pressed('jump') {
-          self.vel:setY(-self.wallJumpForce)
-          self:addForce(-dir * self.speed * 23, 0)
-        }
+        self.slidingDir = dir
+        self.vel:setY(20)
       }
     }
-    if self.isSliding {self.slidingTime += dt} else {self.slidingTime = 0}
+    if self.isSliding {
+      self.slidingTime += dt
+      self.slidingGhost = 0
+    } else {
+      self.slidingGhost += dt
+      self.slidingTime = 0
+    }
+
+    if self.isSliding or self.slidingGhost < .1 {
+      if Input:pressed('jump') {
+        self.slidingGhost = 0
+        self:addForce(-self.slidingDir * (self.wallJumpHForce / dt), 0)
+        self.vel:setY(-self.wallJumpForce)
+        JumpSound:play()
+      }
+    }
 
     if self.ghost != 0 and not self.isSliding {
       if math.abs(self.vel:getX()) > .3 or true{
@@ -113,8 +128,10 @@ return fn(x, y, levelLoader) {
     ##Running
     self:addForce((Input:get('right') - Input:get('left')) * self.speed, 0)
 
+    ##Jumping
     if Input:pressed('jump') and (self.ghost < self.ghostAllowed) and self.vel:getY() >= 0 {
-      self:addForce(0, -self.jumpForce)
+      self.vel:setY(-self.jumpForce)
+      JumpSound:play()
     }
 
     if self:empty(self.pos:getX(), self.pos:getY() + 1) {
@@ -130,14 +147,16 @@ return fn(x, y, levelLoader) {
       fn(ent){return string.match(ent.id, 'spike') or string.match(ent.id, '32')}
     )
     if check {
+      DeathSound:play()
       Running = false
     }
 
     ##Update
-    SlideParticles:update(dt)
-    ##if self.isSliding {
+    if DoParticles {
+      WaterParticles:update(dt)
+      SlideParticles:update(dt)
       SlideParticles:emit(1)
-    ##}
+    }
   }
 
   fn player:getPos() {

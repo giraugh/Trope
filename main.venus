@@ -1,6 +1,6 @@
 ##Init
 love.graphics.setDefaultFilter('nearest', 'nearest')
-love.graphics.setBackgroundColor({18, 78, 137, 255})
+love.graphics.setBackgroundColor(63, 99, 82, 255)
 
 ##Libraries
 require('core.helpers')
@@ -12,12 +12,43 @@ local player = require('game.Player')
 local chunks = require('game.Chunks')
 local profiler = require('lib.profiler')
 local slideParticles = require('game.SlideParticles')
+local waterParticles = require('game.WaterParticles')
+local water = require('game.Water')
+WaveShader = require('game.WaveShader')
+
+Menu = true
 Running = true
-Fade = 249.7
+Fade = 0
 local pStart = 0
 
+DoShaders = true
+DoParticles = true
+DoShowChunkBorders = false
+
+love.window.setMode(800, 600, {resizable=true, vsync=false, minwidth=400, minheight=300})
+
+title = love.graphics.newImage('imgs/Title.png')
+stitle = love.graphics.newImage('imgs/Subtitle.png')
+talpha = 255
+
+DeathSound = love.audio.newSource('DeathShort.wav')
+JumpSound = love.audio.newSource('Jump.wav')
+JumpSound:setVolume(.3)
+DrinkSound = love.audio.newSource('Yay.wav')
+Music = love.audio.newSource('FireDarer-sawsquarenoise.mp3')
+Music:setVolume(.6)
+Music:setLooping(true)
+
+Chunks = chunks()
+Chunks:init()
+
 fn love.load() {
+  ##Music:play()
+
   love.graphics.setFont(love.graphics.newFont(50))
+
+  ##Record Distance
+  Distance = 0
 
   ##Create inputs and assign controls
   Input = require('data.controls')
@@ -27,10 +58,17 @@ fn love.load() {
 
   ##Particle Systems
   SlideParticles = slideParticles()
+  WaterParticles = waterParticles()
+  WaterParticles:init()
+
+  ##Water Controller
+  Water = water()
 
   ##Create chunks and player
-  Chunks = chunks()
-  Chunks:init()
+  Chunks.chunks = {}
+  Chunks:new()
+  Chunks:new()
+  Chunks:new()
   local firstChunkEntry = Chunks:getCurrent().inArrow
   Player = player((Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16), (Chunks:getCurrent().yOffset * 16) + ((firstChunkEntry.y - 3) * 16), Chunks:getCurrent())
   pStart = (Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16)
@@ -43,17 +81,47 @@ fn love.load() {
 
 fn love.update(dt) {
   Input:update()
+
+  if Input:pressed('esc') {
+    if Menu {
+      if not Running {
+        love.event.quit()
+      }
+    } else {
+      Menu = true
+    }
+  }
+
+  if Input:pressed('shaderToggle') {DoShaders = not DoShaders}
+  if Input:pressed('particleToggle') {DoParticles = not DoParticles}
+  if Input:pressed('borderToggle') {DoShowChunkBorders = not DoShowChunkBorders}
+  if Input:pressed('vsyncToggle') {
+    local w, h, f = love.window.getMode()
+    f.vsync = not f.vsync
+    love.window.setMode(w, h, f)
+  }
+
+  if not Menu {
+    Water:update(dt)
+    Camera:trackPlayer(dt)
+  } else {
+    if Input:pressed('jump') or Input:pressed('left') or Input:pressed('right') {
+      Menu = false
+    }
+  }
   if Running {
     Player:update(dt)
-    Fade = lerp(Fade, 0, .1)
+    Distance = math.floor((Player.pos:getX() - pStart) / 16)
+    if not Menu {
+      Fade = lerp(Fade, 0, .07 * (love.timer.getDelta() / 0.0166))
+    }
   } else {
-    Fade = lerp(Fade, 255, .2)
+    Fade = lerp(Fade, 255, .14 * (love.timer.getDelta() / 0.0166))
     if Fade > 249.8 {
       Running = true
       love.load()
     }
   }
-  Camera:trackPlayer()
 }
 
 fn love.draw() {
@@ -62,13 +130,28 @@ fn love.draw() {
   Chunks:draw()
   Player:draw()
   Camera:detach()
-  ##Camera.scale = lerp(Camera.scale, .3, .01)
+  if not Menu {
+    Water:draw()
 
-  love.graphics.print(math.floor((Player.pos:getX() - pStart) / 16) .. ' km', love.graphics:getWidth() - 200, love.graphics:getHeight() - 100)
+    local str = ''
+    if Distance < 1000 {
+      str = Distance .. ' m'
+    } else {
+      str = math.floor(Distance/10)/100 .. ' km'
+    }
+    love.graphics.print(str, love.graphics:getWidth() - 200, love.graphics:getHeight() - 100)
 
-  if Fade != 0 {
-    love.graphics.setColor(0, 0, 0, Fade)
-    love.graphics.rectangle('fill', 0, 0, love.graphics:getWidth(), love.graphics:getHeight())
-    love.graphics.setColor(255, 255, 255, 255)
+    if Fade != 0 {
+      love.graphics.setColor(0, 0, 0, Fade)
+      love.graphics.rectangle('fill', 0, 0, love.graphics:getWidth(), love.graphics:getHeight())
+      love.graphics.setColor(255, 255, 255, 255)
+    }
+    talpha = lerp(talpha, 0, .12 * (love.timer.getDelta() / 0.0166))
+  } else {
+    talpha = lerp(talpha, 255, .12 * (love.timer.getDelta() / 0.0166))
   }
+  love.graphics.setAlpha(talpha)
+  love.graphics.draw(title, (love.graphics:getWidth() / 2) - title:getWidth() * 2, (love.graphics:getHeight() * 1/3) - title:getHeight() * 2, 0, 4)
+  love.graphics.draw(stitle, (love.graphics:getWidth() / 2) - title:getWidth() + 80, (love.graphics:getHeight() * 1/3) - title:getHeight() + 80, 0, 2)
+  love.graphics.setAlpha(255)
 }

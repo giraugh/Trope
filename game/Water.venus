@@ -1,0 +1,85 @@
+return fn() {
+  local water = {}
+  water.waveMagnitude = 20
+  water.waveSpeed = 8
+  water.currentWaterLevel = 1
+  water.currentWaterReduction = .001
+  water.maxWaterReduction = .03
+  water.maxWaterDistance = 900
+  water.glassWaterGain = .4
+  water.glassContain = 0
+
+  fn water:update(dt) {
+
+    ##Tip out your glass
+    if water.glassContain > 0 {
+      water.glassContain -= .001
+      water.currentWaterLevel += .001
+      water.currentWaterLevel = math.min(water.currentWaterLevel, 1)
+    }
+
+    ##Shake n Bake
+    if water.currentWaterLevel < .4 {
+      local t = 1 - (water.currentWaterLevel / .45)
+      Camera.x += love.math.random(-lerp(0, 1, t),lerp(0, 1, t))
+      Camera.y += love.math.random(-lerp(0, 1, t), lerp(0, 1, t))
+    }
+
+    ##Dying
+    if water.currentWaterLevel <= .005 {
+      Running = false
+      water.currentWaterReduction = 0
+      water.maxWaterReduction = 0
+    }
+
+    ##Reduce Water
+    ##water.currentWaterLevel -= water.currentWaterReduction * dt
+    water.currentWaterReduction = lerp(water.currentWaterReduction, water.maxWaterReduction, math.min(1, math.max(0, Distance) / water.maxWaterDistance))
+
+    ##Updating Water Cups
+    foreach chunk in Chunks.chunks {
+      local layerId = -1
+      foreach i, name in chunk.loaded.layerNames {
+        if name == 'Interact' {
+          layerId = i
+        }
+      }
+      assert(layerId != -1, 'No "Interact" layer in chunk')
+      local layer = chunk.loaded.layers[layerId]
+      for i = #layer, 1, -1 {
+        local entity = layer[i]
+        if entity.id == 'instances/WaterCup.png' {
+          entity.y += dt * self.waveMagnitude * math.sin(love.timer.getTime() * self.waveSpeed)
+        }
+        local x1, y1, w1, h1 = Player.pos:getX(), Player.pos:getY(), Player.size.w, Player.size.h
+        local x2, y2, w2, h2 = entity.x, entity.y, chunk.tileSize, chunk.tileSize
+        if rect_overlap(x1, y1, w1, h1, x2, y2, w2, h2) {
+          if DoParticles {WaterParticles:emit(30, Player:getPos())}
+          DrinkSound:play()
+          water.glassContain += water.glassWaterGain
+          table.remove(layer, i)
+        }
+      }
+    }
+  }
+
+  fn water:draw() {
+    local h = love.graphics:getHeight() - 100
+    love.graphics.setColor(0, 149, 233, 255)
+    WaveShader:send("time", love.timer.getTime())
+    if (DoShaders) {love.graphics.setShader(WaveShader)}
+    local x, y, w, h = 50, 50 + (h * (1 - water.currentWaterLevel)), 50, h * water.currentWaterLevel
+    love.graphics.polygon('fill', x, y,   x + w, y, x + w,  y + h,  x, y + h)
+    love.graphics.setColor(255, 255, 255, 255)
+    if (DoShaders) {love.graphics.setShader()}
+    local o = 20
+    h = o + love.graphics:getHeight() - 100
+    love.graphics.setLineWidth(3)
+    love.graphics.line(x, (50 - o), x, (50 - o)+h)
+    love.graphics.line(x, (50 - o)+h, x+w, (50 - o)+h)
+    love.graphics.line(x+w, (50 - o), x+w, (50 - o)+h)
+    love.graphics.setLineWidth(1)
+  }
+
+  return water
+}
