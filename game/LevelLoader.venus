@@ -2,14 +2,26 @@ local json = require('lib.json')
 
 return fn() {
     local lvlLoader = {}
-    fn lvlLoader:load(filename){
+
+    fn lvlLoader:get(filename) {
       local f = love.filesystem.read(filename)
       local data = json:decode(f)
+      return data
+    }
+
+    fn lvlLoader:load(filename){
+      local data = self:get(filename)
+      self:use(data, filename)
+    }
+
+    fn lvlLoader:use(data, filename) {
       local r = {}
 
-      r.src = filename
-      r.name = r.src:gsub("(.-)([^\\/]-([^%.]+))$", "%2")
-      r.name = r.name:gsub(".lvl", "")
+      if filename {
+        r.src = filename
+        r.name = r.src:gsub("(.-)([^\\/]-([^%.]+))$", "%2")
+        r.name = r.name:gsub(".lvl", "")
+      }
 
       r.layerNames = data.layers
       r.bgColour = (data.lconf or {}).bgColour

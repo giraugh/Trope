@@ -12,7 +12,7 @@ local camera = require('game.Camera')
 local player = require('game.Player')
 local chunks = require('game.Chunks')
 local slideParticles = require('game.SlideParticles')
-local waterParticles = require('game.WaterParticles')
+local particles = require('game.Particles')
 local water = require('game.Water')
 WaveShader = require('game.WaveShader')
 Easing = require('lib.easing')
@@ -60,8 +60,8 @@ fn love.load() {
 
   ##Particle Systems
   SlideParticles = slideParticles()
-  WaterParticles = waterParticles()
-  WaterParticles:init()
+  WaterParticles = particles()
+  WaterParticles:init('imgs/particles/water.png')
 
   ##Water Controller
   Water = water()
@@ -131,6 +131,7 @@ fn love.draw() {
   Camera:attach()
   Chunks:draw()
   Player:draw()
+  if DoParticles {WaterParticles:draw()}
   Camera:detach()
   if not Menu {
     Water:draw()

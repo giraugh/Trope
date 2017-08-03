@@ -1,14 +1,14 @@
 local v = require('lib.vectorial')
 
 return fn() {
-  local water = {}
+  local sys = {}
 
-  fn water:init() {
-    self.image = love.graphics.newImage('imgs/particles/water.png')
+  fn sys:init(src) {
+    self.image = love.graphics.newImage(src)
     self.particles = {}
   }
 
-  fn water:update(dt) {
+  fn sys:update(dt) {
     for i = #self.particles, 1, -1 {
       local particle = self.particles[i]
 
@@ -52,43 +52,45 @@ return fn() {
       }
 
       ##Slow down x and roll
-      particle.vel:setX(lerp(particle.vel:getX(), 0, .005))
+      particle.vel:setX(lerp(particle.vel:getX(), 0, particle.damp * dt))
 
       ##Fade out
-      particle.alpha = lerp(particle.alpha, 0, .02)
+      particle.alpha = lerp(particle.alpha, 0, particle.alphadamp * dt)
       if particle.alpha < .01 {
         table.remove(self.particles, i)
       }
     }
   }
 
-  fn water:emit(num, x, y) {
+  fn sys:emit(num, x, y) {
     y += 20
     x += 10
     for i = 1, num {
       local part = {}
 
-      part.pos    = v.Vector2D(love.math.random(x - 10, x + 10), y)
-      part.vel    = (Player.vel * v.Vector2D(.15, .15)) + v.Vector2D(-love.math.random(-40, 40), love.math.random(-100, 0))
+      part.pos    = v.Vector2D(love.math.random(x - 2, x + 2), y)
       part.empty  = self.empty
       part.getPos = self.getPos
       part.alpha  = 350
+      part.damp = .005 / 0.0166
+      part.alphadamp = .02 / 0.0166
+      part.vel      = (Player.vel * v.Vector2D(.15, .15)) + v.Vector2D(-love.math.random(-40, 40), love.math.random(-100, 0))
       part.rotation = love.math.random(0, 2 * 3.14)
-      part.scale = love.math.random(.9, 1.05)
+      part.scale    = love.math.random(.9, 1.05)
 
       table.insert(self.particles, part)
     }
   }
 
-  fn water:empty(x, y, fun) {
+  fn sys:empty(x, y, fun) {
     return Player.chunk:empty(x, y, 5 * self.scale, 5 * self.scale, fun)
   }
 
-  fn water:getPos() {
+  fn sys:getPos() {
     return self.pos:getX(), self.pos:getY()
   }
 
-  fn water:draw() {
+  fn sys:draw() {
     foreach particle in self.particles {
       love.graphics.setColor(255, 255, 255, math.min(255, particle.alpha))
       local x, y = particle:getPos()
@@ -97,5 +99,5 @@ return fn() {
     }
   }
 
-  return water
+  return sys
 }

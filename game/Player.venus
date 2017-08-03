@@ -33,7 +33,6 @@ return fn(x, y, levelLoader) {
   player.entDraw = player.draw
   fn player:draw() {
     self:entDraw()
-    if DoParticles {WaterParticles:draw()}
     if self.isSliding and DoParticles {
       local x, y = self:getPos()
       if self.flipped {
@@ -138,6 +137,9 @@ return fn(x, y, levelLoader) {
       self.ghost += dt
     } else {
       self.ghost = 0
+      if (Input:get('right') - Input:get('left')) != 0 {
+        local xx, yy = self:getPos()
+      }
     }
 
     ##Check for spikes

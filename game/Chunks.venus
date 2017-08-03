@@ -7,12 +7,19 @@ return fn() {
   fn chunks:init() {
     self.chunks = {}
     self.images = {}
+    self.chunkData = {}
 
     ##Load images
     foreach chName in chunkNames {
       local tchunk = levelLoader()
-      tchunk:load(chName)
+      local data = tchunk:get(chName)
+      self.chunkData[chName] = data
+      tchunk:use(data)
       tchunk:loadImages(tchunk.loaded, 'rece/', self.images)
+      tchunk.inArrow  = tchunk:remove('tiles/back-arrow.png')[1]
+      tchunk.outArrow = tchunk:remove('tiles/next-arrow.png')[1]
+      self.chunkData[chName].inArrow = tchunk.inArrow
+      self.chunkData[chName].outArrow = tchunk.outArrow
     }
 
     ##Create starting chunks
@@ -29,12 +36,13 @@ return fn() {
     local chunk = levelLoader()
     i = i or #self.chunks+1
 
-    chunk:load(self:rnd())
+    local cd = table_clone(self.chunkData[self:rnd()])
+    chunk:use(cd)
     chunk.images = self.images
     chunk:setTileSize(16)
     chunk:setSolidLayers({'Main'})
-    chunk.inArrow  = chunk:remove('tiles/back-arrow.png')[1]
-    chunk.outArrow = chunk:remove('tiles/next-arrow.png')[1]
+    chunk.inArrow  = cd.inArrow
+    chunk.outArrow = cd.outArrow
     chunk.width    = (chunk.outArrow.x - chunk.inArrow.x)
     chunk.height   = (chunk.outArrow.y - chunk.inArrow.y)
     chunk.xOffset  = 0
@@ -71,7 +79,7 @@ return fn() {
       if DoShowChunkBorders {
         love.graphics.setLineWidth(5)
         love.graphics.line(chunk.xOffset * chunk.tileSize, cy, chunk.xOffset * chunk.tileSize, cy+love.graphics:getHeight())
-        love.graphics.setLineWidth(1) 
+        love.graphics.setLineWidth(1)
       }
       local x, y, w, h = chunk.xOffset * chunk.tileSize, cy-1, chunk.width * chunk.tileSize, ch*2
       if rect_overlap(x, y, w, h, cx, cy, cw, ch) {
