@@ -7,14 +7,15 @@ require('core.helpers')
 pprint = require('core.tableprint')(require('core.serpent'))
 
 ##Classes
+local profiler = require('lib.profiler')
 local camera = require('game.Camera')
 local player = require('game.Player')
 local chunks = require('game.Chunks')
-local profiler = require('lib.profiler')
 local slideParticles = require('game.SlideParticles')
 local waterParticles = require('game.WaterParticles')
 local water = require('game.Water')
 WaveShader = require('game.WaveShader')
+Easing = require('lib.easing')
 
 Menu = true
 Running = true
@@ -24,8 +25,6 @@ local pStart = 0
 DoShaders = true
 DoParticles = true
 DoShowChunkBorders = false
-
-love.window.setMode(800, 600, {resizable=true, vsync=false, minwidth=400, minheight=300})
 
 title = love.graphics.newImage('imgs/Title.png')
 stitle = love.graphics.newImage('imgs/Subtitle.png')
@@ -41,6 +40,9 @@ Music:setLooping(true)
 
 Chunks = chunks()
 Chunks:init()
+
+##Set Mode
+love.window.setMode(800, 600, {resizable=true, vsync=false, minwidth=400, minheight=300})
 
 fn love.load() {
   ##Music:play()

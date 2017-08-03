@@ -89,7 +89,7 @@ return fn(x, y, levelLoader) {
         self.flipped = dir > 0
         self.isSliding = true
         self.slidingDir = dir
-        self.vel:setY(20)
+        self.vel:setY(Easing.inQuad(self.slidingTime, 20, 80 - 20, 2))
       }
     }
     if self.isSliding {
