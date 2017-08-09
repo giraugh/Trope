@@ -1,6 +1,7 @@
 ##Init
 love.graphics.setDefaultFilter('nearest', 'nearest')
 love.graphics.setBackgroundColor(63, 99, 82, 255)
+love.window.setTitle('Fish-Boy')
 love.math.setRandomSeed(math.random())
 
 ##Libraries

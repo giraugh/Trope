@@ -128,17 +128,20 @@ return fn() {
       local ts = self.tileSize
       foreach layer in self.loaded.layers {
         foreach entity in layer {
-          local x, y = nil, nil
+          local x, y, inside = nil, nil, false
 
           if entity.type == 'Tile' {
             x, y = entity.x*ts, entity.y*ts
+            inside = Camera:inside(x, y, ts, ts)
           }
 
           if entity.type == 'Instance' {
             x, y = entity.x - ts/2, entity.y - ts/2
+            inside = Camera:inside(x, y, self.images[entity.id]:getWidth(), self.images[entity.id]:getHeight())
           }
 
-          if Camera:inside(x, y) {
+
+          if inside {
             love.graphics.draw(self.images[entity.id], x, y, entity.rotation)
           }
         }

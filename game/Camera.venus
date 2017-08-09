@@ -23,10 +23,13 @@ return fn() {
   	love.graphics.translate(-self.x, -self.y)
   }
 
-  fn camera:inside(x, y) {
-    local cx, cy = self.x - love.graphics.getWidth()/2, self.y-love.graphics.getHeight()/2
-    local cw, ch = love.graphics.getWidth(), love.graphics.getHeight()
-    return x >= cx and x <= cx+cw and y >= cy and y <= cy+ch
+  fn camera:inside(x, y, w, h) {
+    assert(w, 'No width passed')
+    assert(h, 'No height passed')
+    local safe = math.max(w, h)
+    local cw, ch = love.graphics.getWidth() / self.scale, love.graphics.getHeight() / self.scale
+    local cx, cy = self.x - cw/2, self.y - ch/2
+    return x+safe >= cx and x-safe <= cx+cw and y+safe >= cy and y-safe <= cy+ch
   }
 
   fn camera:lookAt(...) {
