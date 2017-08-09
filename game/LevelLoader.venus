@@ -139,7 +139,7 @@ return fn() {
           }
 
           if Camera:inside(x, y) {
-            love.graphics.draw(self.images[entity.id], x, y)
+            love.graphics.draw(self.images[entity.id], x, y, entity.rotation)
           }
         }
       }

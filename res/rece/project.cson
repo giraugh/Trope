@@ -4,6 +4,24 @@ imageSize: 16
 levelWidth: 20
 levelHeight: 20
 autos:
+  bg:
+    thumb: "bg/tile-9.png"
+    none:
+      all: ["bg/tile-24.png", 3]
+      r: ["bg/tile-25.png", 2]
+      l: ["bg/tile-23.png", 2]
+      t: ["bg/tile-9.png", 2]
+      b: ["bg/tile-39.png", 2]
+      tr: ["bg/tile-10.png", 3]
+      tl: ["bg/tile-8.png", 3]
+      bl: ["bg/tile-38.png", 3]
+      br: ["bg/tile-40.png", 3]
+    bg:
+      all: ["bg/tile-24.png", 3]
+      tre: ["bg/tile-41.png", 1]
+      tle: ["bg/tile-42.png", 1]
+      bre: ["bg/tile-26.png", 1]
+      ble: ["bg/tile-27.png", 1]
   dirt:
     thumb: "ground/dirt/grndts_11.png"
     none:

@@ -10,5 +10,6 @@ return require('lib.baton').new({
   particleToggle = {'key:p'},
   borderToggle = {'key:i'},
   vsyncToggle = {'key:o'},
+  zoomOut = {'key:y'},
 
 }, love.joystick.getJoysticks()[1])

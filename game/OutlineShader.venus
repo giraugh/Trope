@@ -1,0 +1,2 @@
+local text = love.filesystem.read('shader/outline.glsl')
+return love.graphics.newShader(text)

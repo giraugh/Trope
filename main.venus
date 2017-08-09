@@ -1,6 +1,7 @@
 ##Init
 love.graphics.setDefaultFilter('nearest', 'nearest')
 love.graphics.setBackgroundColor(63, 99, 82, 255)
+love.math.setRandomSeed(math.random())
 
 ##Libraries
 require('core.helpers')
@@ -15,6 +16,7 @@ local slideParticles = require('game.SlideParticles')
 local particles = require('game.Particles')
 local water = require('game.Water')
 WaveShader = require('game.WaveShader')
+OutlineShader = require('game.OutlineShader')
 Easing = require('lib.easing')
 
 Menu = true
@@ -46,6 +48,10 @@ love.window.setMode(800, 600, {resizable=true, vsync=false, minwidth=400, minhei
 
 fn love.load() {
   ##Music:play()
+
+  ##Zoom Levels
+  DefZoom = 1.8
+  PanicZoom = 2.3
 
   love.graphics.setFont(love.graphics.newFont(50))
 
@@ -97,6 +103,7 @@ fn love.update(dt) {
   if Input:pressed('shaderToggle') {DoShaders = not DoShaders}
   if Input:pressed('particleToggle') {DoParticles = not DoParticles}
   if Input:pressed('borderToggle') {DoShowChunkBorders = not DoShowChunkBorders}
+  if Input:get('zoomOut') != 0 {DefZoom -= .3 * dt}
   if Input:pressed('vsyncToggle') {
     local w, h, f = love.window.getMode()
     f.vsync = not f.vsync

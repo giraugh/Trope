@@ -48,6 +48,7 @@ return fn(x, y, levelLoader) {
 
   player.entUpdate = player.update
   fn player:update(dt) {
+
     ##Check in correct chunk
     local dmp = (self.vel * self.damp) * ((v.Vector2D(dt, dt) / v.Vector2D(0.0166, 0.0166)))
     local upd = self.pos + ((self.vel - dmp) * v.Vector2D(dt, dt))
@@ -55,6 +56,17 @@ return fn(x, y, levelLoader) {
 
     ##Update physics and anim etc
     self:entUpdate(dt)
+
+    ##Check for spikes
+    local check = self:checkFor(
+      self.pos:getX(), self.pos:getY(),
+      fn(x){return x == 'BG' or x == 'Background'},
+      fn(ent){return string.match(ent.id, 'spike') or string.match(ent.id, '32')}
+    )
+    if check {
+      DeathSound:play()
+      Running = false
+    }
 
     ##Reduced Gravity
     if Input:get('jump') != 0 and self.vel:getY() < 0 {
@@ -140,17 +152,6 @@ return fn(x, y, levelLoader) {
       if (Input:get('right') - Input:get('left')) != 0 {
         local xx, yy = self:getPos()
       }
-    }
-
-    ##Check for spikes
-    local check = self:checkFor(
-      self.pos:getX(), self.pos:getY(),
-      fn(x){return x == 'BG' or x == 'Background'},
-      fn(ent){return string.match(ent.id, 'spike') or string.match(ent.id, '32')}
-    )
-    if check {
-      DeathSound:play()
-      Running = false
     }
 
     ##Update

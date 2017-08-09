@@ -2,6 +2,44 @@
    "imp": [
       [
          {
+            "type": "Instance",
+            "id": "instances/tree1.png",
+            "x": 17.5,
+            "y": 128.5,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Instance",
+            "id": "instances/shrubs/shrub3.png",
+            "x": 622.5,
+            "y": 279,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Instance",
+            "id": "instances/shrubs/shrub1.png",
+            "x": 455.5,
+            "y": 233,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Instance",
+            "id": "instances/shrubs/shrub1.png",
+            "x": 612.5,
+            "y": 298,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         }
+      ],
+      [
+         {
             "type": "Tile",
             "id": "tiles/decor/grndts_33.png",
             "x": 0,
@@ -5778,6 +5816,7 @@
       ]
    ],
    "layers": [
+      "Very Back",
       "BG",
       "Main",
       "Overlay",

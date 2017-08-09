@@ -1,5 +1,6 @@
 local levelLoader = require('game.LevelLoader')
 local chunkNames = require('data.chunks')
+local shuffle = require('lib.shuffle')
 
 return fn() {
   local chunks = {}
@@ -8,6 +9,8 @@ return fn() {
     self.chunks = {}
     self.images = {}
     self.chunkData = {}
+    self.cQueue = table_clone(chunkNames)
+    shuffle(self.cQueue)
 
     ##Load images
     foreach chName in chunkNames {
@@ -36,8 +39,9 @@ return fn() {
     local chunk = levelLoader()
     i = i or #self.chunks+1
 
-    local cd = table_clone(self.chunkData[self:rnd()])
-    chunk:use(cd)
+    local n = self:rnd()
+    local cd = table_clone(self.chunkData[n])
+    chunk:use(cd, n)
     chunk.images = self.images
     chunk:setTileSize(16)
     chunk:setSolidLayers({'Main'})
@@ -80,6 +84,7 @@ return fn() {
         love.graphics.setLineWidth(5)
         love.graphics.line(chunk.xOffset * chunk.tileSize, cy, chunk.xOffset * chunk.tileSize, cy+love.graphics:getHeight())
         love.graphics.setLineWidth(1)
+        love.graphics.print(chunk.loaded.name, chunk.xOffset * chunk.tileSize + 5, Player.pos:getY() - 20)
       }
       local x, y, w, h = chunk.xOffset * chunk.tileSize, cy-1, chunk.width * chunk.tileSize, ch*2
       if rect_overlap(x, y, w, h, cx, cy, cw, ch) {
@@ -105,7 +110,12 @@ return fn() {
   }
 
   fn chunks:rnd() {
-    return chunkNames[love.math.random(1, #chunkNames)]
+    local i = love.math.random(3)
+    local c = table.remove(self.cQueue, i)
+    table.insert(self.cQueue, c)
+
+    return c
+    ##return chunkNames[love.math.random(1, #chunkNames)]
   }
 
   return chunks

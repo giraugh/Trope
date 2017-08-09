@@ -1,3 +1,7 @@
+local cLerp = require('lib.colLerp')
+local easing = require('lib.easing')
+local tOutQuad = easing.transform(easing.outQuad)
+
 return fn() {
   local water = {}
   water.waveMagnitude = 20
@@ -9,10 +13,19 @@ return fn() {
   water.glassWaterGain = .4
   water.glassContain = 0
 
+  water.rising = false
+  water.prevLevel = 0
+
+  fn water:add() {
+    self.prevLevel = self.currentWaterLevel
+    self.glassContain += self.glassWaterGain
+  }
+
   fn water:update(dt) {
 
     ##Tip out your glass
-    if water.glassContain > 0 {
+    water.rising = water.glassContain > 0
+    if water.rising {
       water.glassContain -= .001
       water.currentWaterLevel += .001
       water.currentWaterLevel = math.min(water.currentWaterLevel, 1)
@@ -23,6 +36,9 @@ return fn() {
       local t = 1 - (water.currentWaterLevel / .45)
       Camera.x += love.math.random(-lerp(0, 1, t),lerp(0, 1, t))
       Camera.y += love.math.random(-lerp(0, 1, t), lerp(0, 1, t))
+      Camera.scale = lerp(Camera.scale, lerp(DefZoom, PanicZoom, 1 - (water.currentWaterLevel / .4)), .006)
+    } else {
+      Camera.scale = lerp(Camera.scale, DefZoom, .006)
     }
 
     ##Dying
@@ -33,7 +49,7 @@ return fn() {
     }
 
     ##Reduce Water
-    ##water.currentWaterLevel -= water.currentWaterReduction * dt
+    water.currentWaterLevel -= water.currentWaterReduction * dt
     water.currentWaterReduction = lerp(water.currentWaterReduction, water.maxWaterReduction, math.min(1, math.max(0, Distance) / water.maxWaterDistance))
 
     ##Updating Water Cups
@@ -56,7 +72,7 @@ return fn() {
         if rect_overlap(x1, y1, w1, h1, x2, y2, w2, h2) {
           if DoParticles {WaterParticles:emit(30, Player:getPos())}
           DrinkSound:play()
-          water.glassContain += water.glassWaterGain
+          self:add()
           table.remove(layer, i)
         }
       }
@@ -64,14 +80,30 @@ return fn() {
   }
 
   fn water:draw() {
+
+    ##Water
+    if (DoShaders) {
+      WaveShader:send("time", love.timer.getTime())
+      love.graphics.setShader(WaveShader)
+    }
     local h = love.graphics:getHeight() - 100
-    love.graphics.setColor(0, 149, 233, 255)
-    WaveShader:send("time", love.timer.getTime())
-    if (DoShaders) {love.graphics.setShader(WaveShader)}
     local x, y, w, h = 50, 50 + (h * (1 - water.currentWaterLevel)), 50, h * water.currentWaterLevel
-    love.graphics.polygon('fill', x, y,   x + w, y, x + w,  y + h,  x, y + h)
+    love.graphics.setColor(0, 149, 233, 255)
+    love.graphics.rectangle('fill', x, y, w, h)
+    if self.rising {
+      love.graphics.setColor(cLerp(
+        {0, 149, 233, 255},
+        {44, 232, 245, 255},
+        water.glassContain / water.glassWaterGain,
+        tOutQuad
+      ))
+      local a = 1 - (self.prevLevel / water.currentWaterLevel)
+      love.graphics.rectangle('fill', x, y, w, h * a)
+    }
     love.graphics.setColor(255, 255, 255, 255)
     if (DoShaders) {love.graphics.setShader()}
+
+    ##Container
     local o = 20
     h = o + love.graphics:getHeight() - 100
     love.graphics.setLineWidth(3)

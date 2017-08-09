@@ -37,6 +37,12 @@ local sqrt = math.sqrt
 local abs = math.abs
 local asin  = math.asin
 
+local function transform(f)
+  return function(a, b, t)
+    return f(t, a, b - a, 1)
+  end
+end
+
 local function linear(t, b, c, d)
   return c * t / d + b
 end
@@ -432,4 +438,5 @@ return {
   outBounce = outBounce,
   inOutBounce = inOutBounce,
   outInBounce = outInBounce,
+  transform = transform,
 }
