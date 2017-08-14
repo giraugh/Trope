@@ -4,6 +4,8 @@ return fn() {
     y = 0,
     scale = 1,
     rot = 0,
+    defZoom = 1.8,
+    panicZoom = 2.3,
   }
 
   fn camera:attach() {

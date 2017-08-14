@@ -12,6 +12,8 @@ return fn() {
   water.maxWaterDistance = 900
   water.glassWaterGain = .4
   water.glassContain = 0
+  water.containerAlpha = 0
+  water.enabled = false
 
   water.rising = false
   water.prevLevel = 0
@@ -22,35 +24,44 @@ return fn() {
   }
 
   fn water:update(dt) {
-
-    ##Tip out your glass
-    water.rising = water.glassContain > 0
-    if water.rising {
-      water.glassContain -= .001
-      water.currentWaterLevel += .001
-      water.currentWaterLevel = math.min(water.currentWaterLevel, 1)
-    }
-
-    ##Shake n Bake
-    if water.currentWaterLevel < .4 {
-      local t = 1 - (water.currentWaterLevel / .45)
-      Camera.x += love.math.random(-lerp(0, 1, t),lerp(0, 1, t))
-      Camera.y += love.math.random(-lerp(0, 1, t), lerp(0, 1, t))
-      Camera.scale = lerp(Camera.scale, lerp(DefZoom, PanicZoom, 1 - (water.currentWaterLevel / .4)), .006)
+    if water.enabled {
+      water.containerAlpha = lerp(water.containerAlpha, 255, dt * (.1 / 0.0166))
     } else {
-      Camera.scale = lerp(Camera.scale, DefZoom, .006)
+      water.containerAlpha = lerp(water.containerAlpha, 0, dt * (.1 / 0.0166))
     }
 
-    ##Dying
-    if water.currentWaterLevel <= .005 {
-      Running = false
-      water.currentWaterReduction = 0
-      water.maxWaterReduction = 0
-    }
+    if water.enabled {
 
-    ##Reduce Water
-    water.currentWaterLevel -= water.currentWaterReduction * dt
-    water.currentWaterReduction = lerp(water.currentWaterReduction, water.maxWaterReduction, math.min(1, math.max(0, Distance) / water.maxWaterDistance))
+      ##Tip out your glass
+      water.rising = water.glassContain > 0
+      if water.rising {
+        water.glassContain -= .001
+        water.currentWaterLevel += .001
+        water.currentWaterLevel = math.min(water.currentWaterLevel, 1)
+      }
+
+      ##Shake n Bake
+      if water.currentWaterLevel < .4 {
+        local t = 1 - (water.currentWaterLevel / .45)
+        Camera.x += love.math.random(-lerp(0, 1, t),lerp(0, 1, t))
+        Camera.y += love.math.random(-lerp(0, 1, t), lerp(0, 1, t))
+        Camera.scale = lerp(Camera.scale, lerp(Camera.defZoom, Camera.panicZoom, 1 - (water.currentWaterLevel / .4)), .006)
+      } else {
+        Camera.scale = lerp(Camera.scale, Camera.defZoom, .006)
+      }
+
+      ##Dying
+      if water.currentWaterLevel <= .005 {
+        Player:die()
+        water.currentWaterReduction = 0
+        water.maxWaterReduction = 0
+      }
+
+      ##Reduce Water
+      water.currentWaterLevel -= water.currentWaterReduction * dt
+      water.currentWaterReduction = lerp(water.currentWaterReduction, water.maxWaterReduction, math.min(1, math.max(0, Distance) / water.maxWaterDistance))
+
+    }
 
     ##Updating Water Cups
     foreach chunk in Chunks.chunks {
@@ -66,14 +77,19 @@ return fn() {
         local entity = layer[i]
         if entity.id == 'instances/WaterCup.png' {
           entity.y += dt * self.waveMagnitude * math.sin(love.timer.getTime() * self.waveSpeed)
+          entity.alpha = entity.alpha or 0
+          if self.enabled {entity.alpha = lerp(entity.alpha, 255, dt * (.1 / 0.0166))}
+          else {entity.alpha = lerp(entity.alpha, 0, dt * (.1 / 0.0166))}
         }
-        local x1, y1, w1, h1 = Player.pos:getX(), Player.pos:getY(), Player.size.w, Player.size.h
-        local x2, y2, w2, h2 = entity.x, entity.y, chunk.tileSize, chunk.tileSize
-        if rect_overlap(x1, y1, w1, h1, x2, y2, w2, h2) {
-          if DoParticles {WaterParticles:emit(30, Player:getPos())}
-          DrinkSound:play()
-          self:add()
-          table.remove(layer, i)
+        if self.enabled {
+          local x1, y1, w1, h1 = Player.pos:getX(), Player.pos:getY(), Player.size.w, Player.size.h
+          local x2, y2, w2, h2 = entity.x, entity.y, chunk.tileSize, chunk.tileSize
+          if rect_overlap(x1, y1, w1, h1, x2, y2, w2, h2) {
+            if DoParticles {WaterParticles:emit(30, Player:getPos())}
+            DrinkSound:play()
+            self:add()
+            table.remove(layer, i)
+          }
         }
       }
     }
@@ -88,29 +104,30 @@ return fn() {
     }
     local h = love.graphics:getHeight() - 100
     local x, y, w, h = 50, 50 + (h * (1 - water.currentWaterLevel)), 50, h * water.currentWaterLevel
-    love.graphics.setColor(0, 149, 233, 255)
+    love.graphics.setColor(0, 149, 233, water.containerAlpha)
     love.graphics.rectangle('fill', x, y, w, h)
     if self.rising {
       love.graphics.setColor(cLerp(
-        {0, 149, 233, 255},
-        {44, 232, 245, 255},
+        {0, 149, 233, water.containerAlpha},
+        {44, 232, 245, water.containerAlpha},
         water.glassContain / water.glassWaterGain,
         tOutQuad
       ))
       local a = 1 - (self.prevLevel / water.currentWaterLevel)
       love.graphics.rectangle('fill', x, y, w, h * a)
     }
-    love.graphics.setColor(255, 255, 255, 255)
+    love.graphics.setColor(255, 255, 255, water.containerAlpha)
     if (DoShaders) {love.graphics.setShader()}
 
     ##Container
     local o = 20
     h = o + love.graphics:getHeight() - 100
-    love.graphics.setLineWidth(3)
+    love.graphics.setLineWidth(3 * water.containerAlpha / 255)
     love.graphics.line(x, (50 - o), x, (50 - o)+h)
     love.graphics.line(x, (50 - o)+h, x+w, (50 - o)+h)
     love.graphics.line(x+w, (50 - o), x+w, (50 - o)+h)
     love.graphics.setLineWidth(1)
+    love.graphics.setAlpha(255)
   }
 
   return water

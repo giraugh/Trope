@@ -6,40 +6,53 @@ return fn() {
   local chunks = {}
 
   fn chunks:init() {
+    self.playerChunkNum = 1
     self.chunks = {}
     self.images = {}
     self.chunkData = {}
     self.cQueue = table_clone(chunkNames)
     shuffle(self.cQueue)
 
-    ##Load images
+    ##Load levels
     foreach chName in chunkNames {
-      local tchunk = levelLoader()
-      local data = tchunk:get(chName)
-      self.chunkData[chName] = data
-      tchunk:use(data)
-      tchunk:loadImages(tchunk.loaded, 'rece/', self.images)
-      tchunk.inArrow  = tchunk:remove('tiles/back-arrow.png')[1]
-      tchunk.outArrow = tchunk:remove('tiles/next-arrow.png')[1]
-      self.chunkData[chName].inArrow = tchunk.inArrow
-      self.chunkData[chName].outArrow = tchunk.outArrow
+      self.chunkData[chName] = self:load(chName)
     }
 
+    ##Load start level
+    self.chunkData['start'] = self:load(chunkNames.start)
+    self.chunkData['empty'] = self:load(chunkNames.empty)
+
     ##Create starting chunks
-    self:new()
-    self:new()
-    self:new()
+    self:new('r')
+    self:new('r')
+    self:new('r')
+  }
+
+  fn chunks:load(fileName) {
+    local out = {}
+
+    local tchunk = levelLoader()
+    local data = tchunk:get(fileName)
+    out = data
+    tchunk:use(data)
+    tchunk:loadImages(tchunk.loaded, 'rece/', self.images)
+    tchunk.inArrow  = tchunk:remove('tiles/back-arrow.png')[1]
+    tchunk.outArrow = tchunk:remove('tiles/next-arrow.png')[1]
+    out.inArrow = tchunk.inArrow
+    out.outArrow = tchunk.outArrow
+
+    return out
   }
 
   fn chunks:getCurrent() {
     return self.chunks[2]
   }
 
-  fn chunks:new(i) {
+  fn chunks:new(dir) {
     local chunk = levelLoader()
-    i = i or #self.chunks+1
+    local i = dir == 'l' and 1 or #self.chunks + 1
+    local n = self:rnd(dir)
 
-    local n = self:rnd()
     local cd = table_clone(self.chunkData[n])
     chunk:use(cd, n)
     chunk.images = self.images
@@ -98,24 +111,35 @@ return fn() {
     if not y {y = Player.pos:getY()}
     local pChunk = Player.chunk
     if x > (pChunk.xOffset + pChunk.width) * pChunk.tileSize {
+      self.playerChunkNum++
       table.remove(self.chunks, 1)
-      self:new()
+      self:new('r')
       Player.chunk = self:getCurrent()
     }
-    if x < pChunk.xOffset * pChunk.tileSize {
+    if x < pChunk.xOffset * pChunk.tileSize and self.playerChunkNum > 0 {
+      self.playerChunkNum--
       table.remove(self.chunks, #self.chunks)
-      self:new(1)
+      self:new('l')
       Player.chunk = self:getCurrent()
     }
   }
 
-  fn chunks:rnd() {
+  fn chunks:rnd(dir) {
+    if (#self.chunks == 0) or (self.playerChunkNum == 1 and dir == 'l') {
+      return 'start'
+    }
+
+    if dir == 'l' and self.playerChunkNum <= 0 {
+      return 'empty'
+    }
+
+
+    ##Random
     local i = love.math.random(3)
     local c = table.remove(self.cQueue, i)
     table.insert(self.cQueue, c)
 
     return c
-    ##return chunkNames[love.math.random(1, #chunkNames)]
   }
 
   return chunks

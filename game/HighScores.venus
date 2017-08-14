@@ -1,0 +1,36 @@
+local json = require('lib.json')
+
+return fn() {
+  local hs = {
+    fname = 'fboy.scores',
+    currentScore = 0,
+  }
+
+  fn hs:init() {
+    ##Load scores file
+    if not love.filesystem.exists(self.fname) {
+      love.filesystem.write(self.fname, '0')
+    }
+
+    local text = love.filesystem.read(self.fname)
+    local num = tonumber(text)
+    assert(num, 'Corrupted High Score - delete the folder \'%appdata%/Love/Fish-Boy\' and restart')
+    self.currentScore = num
+  }
+
+  fn hs:best() {
+    return self.currentScore
+  }
+
+  fn hs:save() {
+    love.filesystem.write(self.fname, tostring(self.currentScore))
+  }
+
+  fn hs:update() {
+    if Distance > self.currentScore {
+      self.currentScore = Distance
+    }
+  }
+
+  return hs
+}

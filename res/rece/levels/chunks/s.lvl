@@ -1,0 +1,5822 @@
+{
+   "imp": [
+      [
+         {
+            "type": "Instance",
+            "id": "instances/tree1.png",
+            "x": 30.5,
+            "y": 128.5,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Instance",
+            "id": "instances/shrubs/shrub1.png",
+            "x": 92,
+            "y": 217,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         }
+      ],
+      [
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 6,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 7,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 8,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 9,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 10,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 15,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 18,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 17,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 16,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 1,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_33.png",
+            "x": 2,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_34.png",
+            "x": 3,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_34.png",
+            "x": 12,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/grndts_35.png",
+            "x": 11,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 11,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 12,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 13,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -13,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -12,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -11,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -10,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -9,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -8,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -7,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -6,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -5,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -4,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -3,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -2,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/decor/spike-outofbound.png",
+            "x": -1,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         }
+      ],
+      [
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_23.png",
+            "x": 0,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 1,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 2,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 3,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_19.png",
+            "x": 1,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 2,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 3,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 4,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 4,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 5,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 5,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 6,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 7,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 6,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 7,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 8,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 8,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 9,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 9,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 10,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 10,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 11,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 11,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 12,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 12,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 13,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 13,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 14,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 14,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 15,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 15,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 16,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 16,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 17,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 17,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 18,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 18,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_18.png",
+            "x": 0,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_17.png",
+            "x": 0,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 1,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_15.png",
+            "x": 1,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 19,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_16.png",
+            "x": 19,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_13.png",
+            "x": 20,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 20,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 20,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 20,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_14.png",
+            "x": 20,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 2
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_15.png",
+            "x": 20,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1,
+            "auto": "grass",
+            "aup": 3
+         }
+      ],
+      [
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grass/grndts_12.png",
+            "x": 20,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 19,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 20,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 21,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 22,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 23,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 24,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 25,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 26,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 27,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 28,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 29,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 30,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 31,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 32,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 33,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 34,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 35,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 15,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 16,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 17,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 18,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 1,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 2,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 3,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 4,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 5,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 6,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 7,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 8,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 9,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 10,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 11,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 12,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 13,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 14,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 15,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 16,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 17,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 18,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 19,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 36,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 37,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/ground/grndts_all.png",
+            "x": 20,
+            "y": 38,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         }
+      ],
+      [
+         {
+            "type": "Tile",
+            "id": "tiles/back-arrow.png",
+            "x": 0,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         },
+         {
+            "type": "Tile",
+            "id": "tiles/next-arrow.png",
+            "x": 20,
+            "y": 14,
+            "data": {},
+            "rotation": 0,
+            "scale": 1
+         }
+      ]
+   ],
+   "layers": [
+      "Very Back",
+      "BG",
+      "Main",
+      "Overlay",
+      "Interact"
+   ],
+   "lconf": {}
+}

@@ -2,6 +2,8 @@
 love.graphics.setDefaultFilter('nearest', 'nearest')
 love.graphics.setBackgroundColor(63, 99, 82, 255)
 love.window.setTitle('Fish-Boy')
+love.filesystem.setIdentity('Fish-Boy')
+love.window.setMode(800, 600, {resizable=true, vsync=false, minwidth=400, minheight=300})
 love.math.setRandomSeed(math.random())
 
 ##Libraries
@@ -16,23 +18,28 @@ local chunks = require('game.Chunks')
 local slideParticles = require('game.SlideParticles')
 local particles = require('game.Particles')
 local water = require('game.Water')
+local dc = require('game.DiffCurve')
+local hs = require('game.HighScores')
 WaveShader = require('game.WaveShader')
+GUI = require('game.GUI')
 OutlineShader = require('game.OutlineShader')
 Easing = require('lib.easing')
 
 Menu = true
 Running = true
 Fade = 0
-local pStart = 0
-
 DoShaders = true
 DoParticles = true
 DoShowChunkBorders = false
+Distance = 0
 
+##Images
 title = love.graphics.newImage('imgs/Title.png')
 stitle = love.graphics.newImage('imgs/Subtitle.png')
+BGimage = love.graphics.newImage('imgs/background.png')
 talpha = 255
 
+##Audio
 DeathSound = love.audio.newSource('DeathShort.wav')
 JumpSound = love.audio.newSource('Jump.wav')
 JumpSound:setVolume(.3)
@@ -41,29 +48,22 @@ Music = love.audio.newSource('FireDarer-sawsquarenoise.mp3')
 Music:setVolume(.6)
 Music:setLooping(true)
 
+##Chunks
 Chunks = chunks()
 Chunks:init()
 
-##Set Mode
-love.window.setMode(800, 600, {resizable=true, vsync=false, minwidth=400, minheight=300})
+##Input
+Input = require('data.controls')
 
 fn love.load() {
-  ##Music:play()
-
-  ##Zoom Levels
-  DefZoom = 1.8
-  PanicZoom = 2.3
-
   love.graphics.setFont(love.graphics.newFont(50))
 
-  ##Record Distance
-  Distance = 0
+  ##Difficulty Curve Controller
+  DC = dc()
 
-  ##Create inputs and assign controls
-  Input = require('data.controls')
-
-  ##Background Image
-  BGimage = love.graphics.newImage('imgs/background.png')
+  ##High Scores Controller
+  HS = hs()
+  HS:init()
 
   ##Particle Systems
   SlideParticles = slideParticles()
@@ -75,12 +75,13 @@ fn love.load() {
 
   ##Create chunks and player
   Chunks.chunks = {}
-  Chunks:new()
-  Chunks:new()
-  Chunks:new()
+  Chunks.playerChunkNum = 1
+  Chunks:new('r')
+  Chunks:new('r')
+  Chunks:new('r')
   local firstChunkEntry = Chunks:getCurrent().inArrow
   Player = player((Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16), (Chunks:getCurrent().yOffset * 16) + ((firstChunkEntry.y - 3) * 16), Chunks:getCurrent())
-  pStart = (Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16)
+  Player.startPos = (Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16)
 
   ##Create camera and point it at player
   Camera = camera()
@@ -104,7 +105,13 @@ fn love.update(dt) {
   if Input:pressed('shaderToggle') {DoShaders = not DoShaders}
   if Input:pressed('particleToggle') {DoParticles = not DoParticles}
   if Input:pressed('borderToggle') {DoShowChunkBorders = not DoShowChunkBorders}
-  if Input:get('zoomOut') != 0 {DefZoom -= .3 * dt}
+  if Input:get('zoomOut') != 0 {
+    if Water.enabled {
+      Camera.defZoom -= .3 * dt
+    } else {
+      Camera.scale -= .3 * dt
+    }
+  }
   if Input:pressed('vsyncToggle') {
     local w, h, f = love.window.getMode()
     f.vsync = not f.vsync
@@ -113,24 +120,14 @@ fn love.update(dt) {
 
   if not Menu {
     Water:update(dt)
+    DC:update(dt)
+    HS:update(dt)
     Camera:trackPlayer(dt)
-  } else {
-    if Input:pressed('jump') or Input:pressed('left') or Input:pressed('right') {
-      Menu = false
-    }
   }
+  GUI.update()
   if Running {
     Player:update(dt)
-    Distance = math.floor((Player.pos:getX() - pStart) / 16)
-    if not Menu {
-      Fade = lerp(Fade, 0, .07 * (love.timer.getDelta() / 0.0166))
-    }
-  } else {
-    Fade = lerp(Fade, 255, .14 * (love.timer.getDelta() / 0.0166))
-    if Fade > 249.8 {
-      Running = true
-      love.load()
-    }
+    Distance = math.floor((Player.pos:getX() - Player.startPos) / 16)
   }
 }
 
@@ -141,28 +138,9 @@ fn love.draw() {
   Player:draw()
   if DoParticles {WaterParticles:draw()}
   Camera:detach()
-  if not Menu {
-    Water:draw()
+  GUI.draw()
+}
 
-    local str = ''
-    if Distance < 1000 {
-      str = Distance .. ' m'
-    } else {
-      str = math.floor(Distance/10)/100 .. ' km'
-    }
-    love.graphics.print(str, love.graphics:getWidth() - 200, love.graphics:getHeight() - 100)
-
-    if Fade != 0 {
-      love.graphics.setColor(0, 0, 0, Fade)
-      love.graphics.rectangle('fill', 0, 0, love.graphics:getWidth(), love.graphics:getHeight())
-      love.graphics.setColor(255, 255, 255, 255)
-    }
-    talpha = lerp(talpha, 0, .12 * (love.timer.getDelta() / 0.0166))
-  } else {
-    talpha = lerp(talpha, 255, .12 * (love.timer.getDelta() / 0.0166))
-  }
-  love.graphics.setAlpha(talpha)
-  love.graphics.draw(title, (love.graphics:getWidth() / 2) - title:getWidth() * 2, (love.graphics:getHeight() * 1/3) - title:getHeight() * 2, 0, 4)
-  love.graphics.draw(stitle, (love.graphics:getWidth() / 2) - title:getWidth() + 80, (love.graphics:getHeight() * 1/3) - title:getHeight() + 80, 0, 2)
-  love.graphics.setAlpha(255)
+fn love.quit() {
+  HS:save()
 }

@@ -30,6 +30,12 @@ return fn(x, y, levelLoader) {
   player.slidingGhost = 0
 
 
+  fn player:die() {
+    Running = false
+    DeathSound:play()
+    HS:save()
+  }
+
   player.entDraw = player.draw
   fn player:draw() {
     self:entDraw()
@@ -64,8 +70,7 @@ return fn(x, y, levelLoader) {
       fn(ent){return string.match(ent.id, 'spike') or string.match(ent.id, '32')}
     )
     if check {
-      DeathSound:play()
-      Running = false
+      Player:die()
     }
 
     ##Reduced Gravity

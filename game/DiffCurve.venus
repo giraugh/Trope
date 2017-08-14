@@ -1,0 +1,11 @@
+return fn() {
+  local dc = {}
+
+  function dc:update() {
+    if Distance > 250 {
+      Water.enabled = true
+    }
+  }
+
+  return dc
+}

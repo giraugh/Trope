@@ -142,7 +142,9 @@ return fn() {
 
 
           if inside {
+            love.graphics.setAlpha(entity.alpha or 255)
             love.graphics.draw(self.images[entity.id], x, y, entity.rotation)
+            love.graphics.setAlpha(255)
           }
         }
       }
