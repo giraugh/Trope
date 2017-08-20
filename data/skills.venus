@@ -1,0 +1,23 @@
+return {
+  ['jump'] = {
+    msg = 'Press [jump] to jump!',
+    length = 3,
+  },
+  ['slide'] = {
+    msg = 'Push into a wall to slide down it.',
+    length = 1
+  },
+  ['wall-jump'] = {
+    msg = 'When sliding, press [jump] to wall jump!',
+    length = 2
+  },
+  ['adv-wall-jump'] = {
+    msg = nil,
+    length = 2
+  },
+  ['water'] = {
+    msg = 'Dont let your water run out! Pick up glasses to refill it!',
+    preq = 'adv-wall-jump',
+    length = 0
+  }
+}

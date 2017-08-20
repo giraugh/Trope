@@ -1,5 +1,8 @@
 local levelLoader = require('game.LevelLoader')
-local chunkNames = require('data.chunks')
+local chunkData = require('data.chunks')
+local chunkNames = map(chunkData, fn(x){return x.path})
+local chunkPrereqs = map(chunkData, fn(x){return x.pre})
+local chunkTeaches = map(chunkData, fn(x){return x.get})
 local shuffle = require('lib.shuffle')
 
 return fn() {
@@ -7,10 +10,12 @@ return fn() {
 
   fn chunks:init() {
     self.playerChunkNum = 1
+    self.mostPlayerChunkNum = 1
     self.chunks = {}
     self.images = {}
     self.chunkData = {}
     self.cQueue = table_clone(chunkNames)
+    self.acQueue = {}
     shuffle(self.cQueue)
 
     ##Load levels
@@ -52,6 +57,7 @@ return fn() {
     local chunk = levelLoader()
     local i = dir == 'l' and 1 or #self.chunks + 1
     local n = self:rnd(dir)
+    assert(self.chunkData[n], 'no such level as ' .. n)
 
     local cd = table_clone(self.chunkData[n])
     chunk:use(cd, n)
@@ -112,6 +118,10 @@ return fn() {
     local pChunk = Player.chunk
     if x > (pChunk.xOffset + pChunk.width) * pChunk.tileSize {
       self.playerChunkNum++
+      if self.mostPlayerChunkNum + 1 == self.playerChunkNum {
+        self:completed(Player.chunk)
+      }
+      self.mostPlayerChunkNum = self.playerChunkNum
       table.remove(self.chunks, 1)
       self:new('r')
       Player.chunk = self:getCurrent()
@@ -121,6 +131,43 @@ return fn() {
       table.remove(self.chunks, #self.chunks)
       self:new('l')
       Player.chunk = self:getCurrent()
+    }
+  }
+
+  fn chunks:restart() {
+    self.chunks = {}
+    self.acQueue = {}
+    self.playerChunkNum = 1
+    self.mostPlayerChunkNum = 1
+    self:new('r')
+    self:new('r')
+    self:new('r')
+    local firstChunkEntry = self:getCurrent().inArrow
+    return (Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16), (Chunks:getCurrent().yOffset * 16) + ((firstChunkEntry.y - 3) * 16)
+  }
+
+  fn chunks:updateActualQueue() {
+    ##Temp
+    foreach i, chunk in chunkNames {
+      if not table_contains(self.acQueue, chunk) {
+        local pre = chunkPrereqs[i]
+        local unlearnt = ifilter(pre, fn(x){return not Skills:isLearnt(x)})
+        if #unlearnt == 0 {
+          table.insert(self.acQueue, 1, chunk)
+        }
+      }
+    }
+  }
+
+  fn chunks:completed(chunk) {
+    local n = chunk.loaded.src
+    local g = map(ifilter(chunkData, fn(x){return x.path == n}), fn(x){return x.get})
+    g = g[1] or {}
+    foreach get in g {
+      if not Skills:isLearnt(get) {
+        Skills:learn(get)
+        local s = Skills.learnt[get]
+      }
     }
   }
 
@@ -135,10 +182,13 @@ return fn() {
 
 
     ##Random
-    local i = love.math.random(3)
-    local c = table.remove(self.cQueue, i)
-    table.insert(self.cQueue, c)
+    self:updateActualQueue()
+    assert(#self.acQueue > 0, 'No suitable levels')
+    local i = love.math.random(math.min(#self.acQueue, 3))
+    local c = table.remove(self.acQueue, i)
+    table.insert(self.acQueue, c)
 
+    assert(c, 'Returning level isnt defined')
     return c
   }
 

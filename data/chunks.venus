@@ -1,17 +1,94 @@
 return {
-  'rece/levels/chunks/1.lvl',
-  'rece/levels/chunks/2.lvl',
-  'rece/levels/chunks/3.lvl',
-  'rece/levels/chunks/4.lvl',
-  'rece/levels/chunks/5.lvl',
-  'rece/levels/chunks/6.lvl',
-  'rece/levels/chunks/7.lvl',
-  'rece/levels/chunks/9.lvl',
-  'rece/levels/chunks/10.lvl',
-  'rece/levels/chunks/L1.lvl',
-  'rece/levels/chunks/L2.lvl',
-  'rece/levels/chunks/L3.lvl',
+  {
+		path = 'rece/levels/chunks/1.lvl',
+		pre = {'jump'},
+		get = {'wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/2.lvl',
+		pre = {'jump', 'wall-jump'},
+		get = {'adv-wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/3.lvl',
+		pre = {'jump', 'wall-jump'},
+		get = {'adv-wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/4.lvl',
+		pre = {'jump', 'wall-jump'},
+		get = {'adv-wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/5.lvl',
+		pre = {'jump'},
+		get = {'wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/6.lvl',
+		pre = {'jump'},
+		get = {'wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/7.lvl',
+		pre = {},
+		get = {'jump'},
+	},
+  {
+		path = 'rece/levels/chunks/9.lvl',
+		pre = {'jump', 'wall-jump'},
+		get = {'adv-wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/10.lvl',
+		pre = {'jump', 'wall-jump', 'adv-wall-jump'},
+		get = {},
+	},
+  {
+		path = 'rece/levels/chunks/11.lvl',
+		pre = {},
+		get = {'jump'},
+	},
+  {
+		path = 'rece/levels/chunks/12.lvl',
+		pre = {'jump'},
+		get = {'wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/13.lvl',
+		pre = {},
+		get = {'jump'},
+	},
+  {
+		path = 'rece/levels/chunks/14.lvl',
+		pre = {},
+		get = {'jump'},
+	},
+  {
+		path = 'rece/levels/chunks/15.lvl',
+		pre = {},
+		get = {'jump'},
+	},
+  {
+		path = 'rece/levels/chunks/L1.lvl',
+		pre = {'jump'},
+		get = {'wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/L2.lvl',
+		pre = {'jump', 'wall-jump'},
+		get = {'adv-wall-jump'},
+	},
+  {
+		path = 'rece/levels/chunks/L3.lvl',
+		pre = {'jump', 'wall-jump'},
+		get = {'adv-wall-jump'},
+	},
 
-  start = 'rece/levels/chunks/s.lvl',
-  empty = 'rece/levels/chunks/e.lvl',
+  start = {
+		path = 'rece/levels/chunks/s.lvl',
+	},
+  empty = {
+		path = 'rece/levels/chunks/e.lvl',
+	},
 }

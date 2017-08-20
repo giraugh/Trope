@@ -1,0 +1,62 @@
+local AllSkills = require('data.skills')
+
+return fn() {
+  local skills = {}
+  skills.learnt = {}
+
+  fn skills:reset() {
+    self.learnt = {}
+  }
+
+  fn skills:updatePreqs() {
+    for sn, skill in pairs(AllSkills) {
+      if skill.preq {
+        if self:isLearnt(skill.preq) {
+          self:learn(sn)
+        }
+      }
+    }
+  }
+
+  fn skills:learn(name) {
+    ##Get Skill
+    local skill = AllSkills[name]
+    assert(skill, 'No such skill as "' .. name .. '"')
+
+    ##Add this to my skills
+    if self.learnt[name] {
+      local s = self.learnt[name]
+      s.tries++
+      if s.tries >= s.reqTries {
+        s.tries = s.reqTries
+        s.complete = true
+        self:updatePreqs()
+      }
+    } else {
+      self.learnt[name] = {
+        name = name,
+        tries = 1,
+        reqTries = skill.length,
+        complete = skill.length == 0 and true or false
+      }
+    }
+    print(
+      'learnt ' .. name ..
+      ' [' .. self.learnt[name].tries ..
+      '/'
+      .. self.learnt[name].reqTries ..
+      ']'
+    )
+  }
+
+  fn skills:isLearnt(name) {
+    local s = self.learnt[name]
+    if s == nil {
+      return false
+    } else {
+      return self.learnt[name].complete
+    }
+  }
+
+  return skills
+}

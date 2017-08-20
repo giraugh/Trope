@@ -2,7 +2,7 @@ return fn() {
   local dc = {}
 
   function dc:update() {
-    if Distance > 250 {
+    if Skills:isLearnt('water') {
       Water.enabled = true
     }
   }

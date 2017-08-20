@@ -28,7 +28,7 @@ return fn(x, y, levelLoader) {
   player.slidingTime = 0
   player.slidingDir = 0
   player.slidingGhost = 0
-
+  player.startPos = x
 
   fn player:die() {
     Running = false

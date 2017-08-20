@@ -20,6 +20,7 @@ local particles = require('game.Particles')
 local water = require('game.Water')
 local dc = require('game.DiffCurve')
 local hs = require('game.HighScores')
+local skills = require('game.Skills')
 WaveShader = require('game.WaveShader')
 GUI = require('game.GUI')
 OutlineShader = require('game.OutlineShader')
@@ -48,6 +49,9 @@ Music = love.audio.newSource('FireDarer-sawsquarenoise.mp3')
 Music:setVolume(.6)
 Music:setLooping(true)
 
+##Skill Controller
+Skills = skills()
+
 ##Chunks
 Chunks = chunks()
 Chunks:init()
@@ -60,6 +64,9 @@ fn love.load() {
 
   ##Difficulty Curve Controller
   DC = dc()
+
+  ##Reset Skills
+  Skills:reset()
 
   ##High Scores Controller
   HS = hs()
@@ -74,14 +81,8 @@ fn love.load() {
   Water = water()
 
   ##Create chunks and player
-  Chunks.chunks = {}
-  Chunks.playerChunkNum = 1
-  Chunks:new('r')
-  Chunks:new('r')
-  Chunks:new('r')
-  local firstChunkEntry = Chunks:getCurrent().inArrow
-  Player = player((Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16), (Chunks:getCurrent().yOffset * 16) + ((firstChunkEntry.y - 3) * 16), Chunks:getCurrent())
-  Player.startPos = (Chunks:getCurrent().xOffset * 16) + (firstChunkEntry.x * 16)
+  local px, py = Chunks:restart()
+  Player = player(px, py, Chunks:getCurrent())
 
   ##Create camera and point it at player
   Camera = camera()
